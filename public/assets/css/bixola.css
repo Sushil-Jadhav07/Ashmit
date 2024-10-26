@@ -29,7 +29,7 @@
   --bixola-gray-rgb: 65, 70, 81;
   --bixola-white: #ffffff;
   --bixola-white-rgb: 255, 255, 255;
-  --bixola-base: #F52549;
+  --bixola-base: #2c5484;
   --bixola-base-rgb: 245, 37, 73;
   --bixola-black: #0D121E;
   --bixola-black-rgb: 13, 18, 30;
@@ -856,7 +856,7 @@ ul {
   padding-right: 15px;
 }
 
-.main-menu .main-menu__list>li.dropdown>a:after {
+/* .main-menu .main-menu__list>li.dropdown>a:after {
   position: absolute;
   top: 50%;
   right: 0;
@@ -869,7 +869,7 @@ ul {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
-}
+} */
 
 .main-menu .main-menu__list>li.current>a::after,
 .main-menu .main-menu__list>li:hover>a::after,
@@ -1221,11 +1221,13 @@ ul {
 }
 
 .mobile-nav__content .logo-box {
-  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 
 .mobile-nav__close {
   position: absolute;
@@ -2237,7 +2239,7 @@ ul {
 # Navigations Four
 --------------------------------------------------------------*/
 .main-header-four {
-  background: transparent;
+  background: #0D121E;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -2383,7 +2385,7 @@ ul {
 .main-menu-four__wrapper-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 60px 0;
   z-index: 1;
@@ -8452,6 +8454,12 @@ ul {
   position: relative;
   display: block;
 }
+.footer-widget-two__logo .img{
+  position: relative;
+  display: block;
+  width: 400px;
+
+}
 
 .footer-widget-two__about-text {
   font-size: 16px;
@@ -14423,7 +14431,7 @@ ul {
   height: 60px;
   opacity: 0.67;
   clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 50% 0%);
-  background-color: #F52549;
+  background-color: var(--bs-blue);
   transition: all 500ms ease;
 }
 
@@ -15298,7 +15306,7 @@ ul {
   left: 0;
   right: 0;
   content: "";
-  background-color: var(--bixola-black);
+  background-color: #356092  ;
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;

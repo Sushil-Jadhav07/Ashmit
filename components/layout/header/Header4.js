@@ -64,7 +64,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                             <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
                             <Menu />
                         </div>
-                        <div className="main-menu-four__right">
+                        {/* <div className="main-menu-four__right">
                             <div className="main-menu-four__call">
                                 <div className="main-menu-four__call-icon">
                                     <span className="icon-phone-call"></span>
@@ -84,11 +84,12 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                                     <Link href="#" className="main-menu-four__cart icon-shopping-cart"></Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>\
+
         <MobileMenu handleMobileMenu={handleMobileMenu} />
         <div className={`stricky-header stricked-menu main-menu main-menu-four ${scroll ? "stricky-fixed" : ""}`}>
             <div className="sticky-header__content">
@@ -102,7 +103,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                                 <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
                                 <Menu />
                             </div>
-                            <div className="main-menu-four__right">
+                            {/* <div className="main-menu-four__right">
                                 <div className="main-menu-four__call">
                                     <div className="main-menu-four__call-icon">
                                         <span className="icon-phone-call"></span>
@@ -122,7 +123,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                                         <Link href="#" className="main-menu-four__cart icon-shopping-cart"></Link>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </nav>

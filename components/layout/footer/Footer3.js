@@ -56,21 +56,21 @@ export default function Footer3() {
                 </div>
                 <div className="site-footer-three__middle">
                     <div className="row">
-                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div className="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget-three__column footer-widget-three__about">
                                 <div className="footer-widget-two__logo">
-                                    <a href="/"><img src="assets/images/resources/footer-logo-2.png"
+                                    <a href="/"><img src="assets/images/resources/CA_logo.png" width="60%"
                                             alt=""/></a>
                                 </div>
                                 <p className="footer-widget-three__about-text">Lorem Ipsum is simply dummy text of<br/>
                                     printing and typesetting industry.</p>
                                 <div className="footer-widget-three__email">
                                     <a href="mailto:info@example.com"><span
-                                            className="icon-gmail"></span>info@example.com</a>
+                                            className="icon-gmail"></span>info@ashmitassociates.com</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget-three__column footer-widget-three__company">
                                 <div className="footer-widget-three__title-box">
                                     <h3 className="footer-widget-three__title">Company</h3>
@@ -78,17 +78,17 @@ export default function Footer3() {
                                 <ul className="footer-widget-three__company-list list-unstyled">
                                     <li><a href="about">About
                                         </a></li>
-                                    <li><a href="team">Meet our team
+                                    <li><a href="team">Pages
                                         </a></li>
-                                    <li><a href="portfolio">Case stories
+                                    <li><a href="portfolio">Services
                                         </a></li>
-                                    <li><a href="news-1">Latest News
+                                    <li><a href="news-1">News
                                         </a></li>
                                     <li><a href="contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        {/* <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget-three__column footer-widget-three__post">
                                 <div className="footer-widget-three__title-box">
                                     <h3 className="footer-widget-three__title">Latest Post</h3>
@@ -116,8 +116,9 @@ export default function Footer3() {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        </div> */}
+                        
+                        <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div className="footer-widget-three__column footer-widget-three__subscribe">
                                 <div className="footer-widget-three__title-box">
                                     <h3 className="footer-widget-three__title">Subscribe Now</h3>
@@ -141,8 +142,7 @@ export default function Footer3() {
             <div className="site-footer-three__bottom">
                 <div className="container">
                     <div className="site-footer-three__bottom-inner">
-                        <p className="site-footer-three__bottom-text">© Copyright 2023 HR Design website. All rights
-                            reserved.
+                        <p className="site-footer-three__bottom-text">© 2023 Copyright www.ashmitassociates.com All rights reserved
                         </p>
                         <div className="site-footer-three__bottom-social">
                             <a href="#"><i className="fab fa-facebook"></i></a>

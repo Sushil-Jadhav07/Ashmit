@@ -14,13 +14,13 @@ export default function About() {
                             <div className="about-four__img wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <img src="assets/images/resources/about-img.png" alt=""/>
-                                <div className="about-four__experience">
+                                {/* <div className="about-four__experience">
                                     <div className="about-four__experience-count count-box">
                                         <h3> 25</h3>
                                         <span>+</span>
                                     </div>
                                     <p className="about-four__experience-text">YEARS OF EXPERIENCES</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
