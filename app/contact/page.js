@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Contact">
            
-                <section className="information">
+                {/* <section className="information">
                     <div className="container">
                         <div className="row">
                         
@@ -59,7 +59,7 @@ export default function Home() {
                         
                         </div>
                     </div>
-                </section>
+                </section> */}
                 
                 <section className="contact-page">
                     <div className="container">
@@ -124,7 +124,7 @@ export default function Home() {
                             <div className="col-xl-6 col-lg-6">
                                 <div className="contact-page__right">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6942610965048!2d72.95918137520871!3d19.208551682023554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9ceb33ffadf%3A0x11f9fc4a5a571ac5!2sAshmit%20and%20Associates%20-%20Chartered%20Accountant!5e0!3m2!1sen!2sin!4v1702624068802!5m2!1sen!2sin"
                                         className="google-map__one"></iframe>
                                 </div>
                             </div>

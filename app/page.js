@@ -9,6 +9,7 @@ import History from "@/components/sections/home4/History"
 import Industries from "@/components/sections/home4/Industries"
 import Team from "@/components/sections/home4/Team"
 import Services from "@/components/sections/home4/Services"
+import Feature from "@/components/sections/home1/Feature"
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
                 <Features />
                 <Industries />
                 <Services />
+                <Feature/>
             </Layout>
         </>
     )

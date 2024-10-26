@@ -11,7 +11,7 @@ export default function Features() {
                     <div className="section-title-three__tagline-box">
                         <p className="section-title-three__tagline">Gamut of Services</p>
                     </div>
-                    <h2 className="section-title-three__title">Grow Your Brand By Zeroing In On<br/> Your Target Market</h2>
+                    {/* <h2 className="section-title-three__title">Grow Your Brand By Zeroing In On<br/> Your Target Market</h2> */}
                 </div>
                 <div className="row">
                     {/*Feature Three Single Start*/}

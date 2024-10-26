@@ -364,12 +364,14 @@ ul {
   text-transform: capitalize;
 }
 
-.section-title-three {
+.section-title-three-text-left {
+  justify-items: center;
   position: relative;
   display: block;
-  margin-top: -10px;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
+
 
 .section-title-three__tagline-box {
   position: relative;
@@ -3779,7 +3781,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(211deg, rgba(245, 37, 73, 0.68) 0%, rgba(13, 28, 51, 0.72) 100%, rgba(14, 37, 72, 0.75) 100%);
+  background: linear-gradient(211deg, rgb(30, 124, 255) 0%, rgba(13, 28, 51, 0.72) 100%, rgba(14, 37, 72, 0.75) 100%);
   mix-blend-mode: multiply;
   border-radius: var(--bixola-bdr-radius);
   z-index: -1;
@@ -6349,7 +6351,7 @@ ul {
   position: relative;
   display: block;
   margin-left: 106px;
-  margin-top: 47px;
+  margin-top: 20px;
 }
 
 .about-two__title {
@@ -13671,6 +13673,7 @@ ul {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page {
+  margin-top: 70px;
   position: relative;
   display: block;
   padding: 0 0 120px;
@@ -15274,7 +15277,7 @@ ul {
 }
 
 .services-four__main-tab .tab-buttons {
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -15282,11 +15285,11 @@ ul {
 }
 
 .services-four__main-tab .tab-buttons .tab-btn {
-  position: relative;
-  flex: 0 0 16.66666666666667%;
-  max-width: 16.66666666666667%;
+  flex:0 0 33.3333%;
+  max-width: 33.3333%;
   width: 100%;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .services-four__tab-buttons-single {
