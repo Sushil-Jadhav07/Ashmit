@@ -88,7 +88,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                     </div>
                 </div>
             </nav>
-        </header>\
+        </header>
 
         <MobileMenu handleMobileMenu={handleMobileMenu} />
         <div className={`stricky-header stricked-menu main-menu main-menu-four ${scroll ? "stricky-fixed" : ""}`}>

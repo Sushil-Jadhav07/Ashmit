@@ -1,13 +1,12 @@
+"use client";
+import Layout from "@/components/layout/Layout";
 
-import Layout from "@/components/layout/Layout"
-import Link from "next/link"
+import Link from "next/link";
 export default function Home() {
-
-    return (
-        <>
-            <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Contact">
-           
-                {/* <section className="information">
+  return (
+    <>
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Contact">
+        {/* <section className="information">
                     <div className="container">
                         <div className="row">
                         
@@ -60,80 +59,104 @@ export default function Home() {
                         </div>
                     </div>
                 </section> */}
-                
-                <section className="contact-page">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="contact-page__left">
-                                    <h3 className="contact-page__title">Get in Touch</h3>
-                                    <p className="contact-page__sub-title">LEAVE US A MESSAGE</p>
-                                    <div className="contact-page__form-box">
-                                        <form action="assets/inc/sendemail.php"
-                                            className="contact-page__form contact-form-validated" >
-                                            <div className="row">
-                                                <div className="col-xl-12">
-                                                    <div className="contact-page__input-box">
-                                                        <h3 className="contact-page__input-title">Full Name *</h3>
-                                                        <input type="text" placeholder="Jhon Smith" name="name"/>
-                                                    </div>
-                                                </div>
-                                                <div className="col-xl-6">
-                                                    <div className="contact-page__input-box">
-                                                        <h3 className="contact-page__input-title">Email *</h3>
-                                                        <input type="email" placeholder="e.g:" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="col-xl-6">
-                                                    <div className="contact-page__input-box">
-                                                        <h3 className="contact-page__input-title">Phone Number *</h3>
-                                                        <input type="text" placeholder="+1 (00)" name="Phone"/>
-                                                    </div>
-                                                </div>
-                                                <div className="col-xl-12">
-                                                    <div className="contact-page__input-box">
-                                                        <h3 className="contact-page__input-title">subject*</h3>
-                                                        <div className="contact-page__showing-sort">
-                                                            <select className="selectpicker" aria-label="Default select example">
-                                                                <option>Select ...</option>
-                                                                <option value="1">Sort by popular-01</option>
-                                                                <option value="2">Sort by popular-02</option>
-                                                                <option value="3">Sort by popular-03</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-xl-12">
-                                                    <div className="contact-page__input-box text-message-box">
-                                                        <h3 className="contact-page__input-title">Message
-                                                            <span>(Oprional)</span></h3>
-                                                        <textarea name="message" placeholder="Type here..."></textarea>
-                                                    </div>
-                                                    <div className="contact-page__btn-box">
-                                                        <button type="submit" className="thm-btn contact-page__btn"><span
-                                                                className="fas fa-paper-plane"></span>SEND
-                                                            MESSAGE</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div className="result"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="contact-page__right">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6942610965048!2d72.95918137520871!3d19.208551682023554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9ceb33ffadf%3A0x11f9fc4a5a571ac5!2sAshmit%20and%20Associates%20-%20Chartered%20Accountant!5e0!3m2!1sen!2sin!4v1702624068802!5m2!1sen!2sin"
-                                        className="google-map__one"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-        
 
-            </Layout>
-        </>
-    )
+        <section className="contact-page">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-6 col-lg-6">
+                <div className="contact-page__left bg-white p-4 rounded shadow-sm">
+                  <h3 className="contact-page__title mb-3">Get in Touch</h3>
+                  <p className="contact-page__sub-title mb-4">
+                    LEAVE US A MESSAGE
+                  </p>
+                  <form
+                    action="assets/inc/sendemail.php"
+                    className="contact-page__form contact-form-validated"
+                  >
+                    <div className="row">
+                      <div className="col-12 mb-3">
+                        <label htmlFor="name" className="form-label">
+                          Full Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          className="form-control"
+                          placeholder="John Smith"
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3 ">
+                        <label htmlFor="email" className="form-label">
+                          Email *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          className="form-control"
+                          placeholder="e.g: your@email.com"
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3 px-2">
+                        <label htmlFor="phone" className="form-label">
+                          Phone Number *
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          className="form-control"
+                          placeholder="+91 xxxxx xxxxx"
+                          required
+                        />
+                      </div>
+                      <div className="col-12 mb-3 ">
+                        <label htmlFor="qualifications" className="form-label">
+                          Qualifications
+                        </label>
+                        <input
+                          type="text"
+                          id="qualifications"
+                          className="form-control"
+                          placeholder="B.Tech, M.Tech"
+                        />
+                      </div>
+
+                      {/* Message field */}
+                      <div className="col-12 mb-3">
+                        <label htmlFor="message" className="form-label">
+                          Message <span>(Optional)</span>
+                        </label>
+                        <textarea
+                          id="message"
+                          className="form-control"
+                          placeholder="Type here..."
+                          style={{ height: "150px" }}
+                        ></textarea>
+                      </div>
+
+                      {/* Submit Button */}
+                      <div className="col-12 mt-5 text-center">
+                        <button type="submit" className="btn btn-primary">
+                          SEND MESSAGE
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div className="col-xl-6 col-lg-6">
+                <div className="contact-page__right">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6942610965048!2d72.95918137520871!3d19.208551682023554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9ceb33ffadf%3A0x11f9fc4a5a571ac5!2sAshmit%20and%20Associates%20-%20Chartered%20Accountant!5e0!3m2!1sen!2sin!4v1702624068802!5m2!1sen!2sin"
+                    className="google-map__one"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Layout>
+    </>
+  );
 }

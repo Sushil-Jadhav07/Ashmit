@@ -35,7 +35,7 @@ export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="About company">
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="About company">
         {/*About Two Start */}
         <section className="about-two">
           <div className="about-two__shape-2 zoominout">
@@ -107,14 +107,6 @@ export default function Home() {
                       src="assets/images/resources/aboutpg-img1.png"
                       alt=""
                     />
-                    {/* <div className="about-two__video-link">
-                                        <a onClick={() => setOpen(true)} className="video-popup">
-                                            <div className="about-two__video-icon">
-                                                <span className="fa fa-play"></span>
-                                                <i className="ripple"></i>
-                                            </div>
-                                        </a>
-                                    </div> */}
                   </div>
                 </div>
               </div>
@@ -338,6 +330,112 @@ export default function Home() {
           </div>
         </section>
         {/*Feature One Start */}
+
+        <section className="services-carousel-page">
+          <div className="services-four__top">
+            <div className="row">
+              <div className="col-xl-12 col-lg-12">
+                <div className="services-four__left">
+                  <div className="section-title-three-text-left">
+                    <div className="section-title-three__tagline-box">
+                      <p className="section-title-three__tagline">Why Us</p>
+                    </div>
+                    <h2 className="section-title-three__title">
+                      Why we are the best
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-xl-6 col-lg-6">
+                            <div className="services-four__right">
+                                <p className="services-four__text">It is a long established fact that a reader will be
+                                    distracted by the readable content of a page when looking at its layout.
+                                </p>
+                            </div>
+                        </div> */}
+            </div>
+          </div>
+
+          <div className="container">
+            <Swiper
+              {...swiperOptions}
+              className="services-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style"
+            >
+              {/*Services Page Single Start*/}
+              <SwiperSlide>
+                <div className="item">
+                  <div className="services-page__single">
+                    <h3 className="services-page__title">
+                      <Link href="business-audit">SERVICES</Link>
+                    </h3>
+                    <div className="services-page__icon">
+                      <span className="icon-report"></span>
+                    </div>
+                    <p className="services-page__text">
+                      All type of industries, services, and operational levels,
+                      we help our clients ensure excellence by giving them the
+                      benefit into this field since 2019 years of experience
+                    </p>
+                    <div className="services-page__btn">
+                      <Link href="business-audit">
+                        Learn More<span className="icon-right-arrow1"></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/*Services Page Single End*/}
+              {/*Services Page Single Start*/}
+              <SwiperSlide>
+                <div className="item">
+                  <div className="services-page__single">
+                    <h3 className="services-page__title">
+                      <Link href="business-planning">EXPERTISE</Link>
+                    </h3>
+                    <div className="services-page__icon">
+                      <span className="icon-planning"></span>
+                    </div>
+                    <p className="services-page__text">
+                      Our expertise is to simplify and interpret, complex
+                      information to be understood, by the client who is not of
+                      the, finance and tax background.
+                    </p>
+                    <div className="services-page__btn">
+                      <Link href="business-planning">
+                        Learn More<span className="icon-right-arrow1"></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/*Services Page Single End*/}
+              {/*Services Page Single Start*/}
+              <SwiperSlide>
+                <div className="item">
+                  <div className="services-page__single">
+                    <h3 className="services-page__title">
+                      <Link href="financial-advices">WORK</Link>
+                    </h3>
+                    <div className="services-page__icon">
+                      <span className="icon-financial-advices11"></span>
+                    </div>
+                    <p className="services-page__text">
+                      Ashmit & Associates focus on Audit & Assurance, Taxation
+                      Consultancy, Customizing our services based on the clients
+                      requirements has been our key strength.
+                    </p>
+                    <div className="services-page__btn">
+                      <Link href="financial-advices">
+                        Learn More<span className="icon-right-arrow1"></span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/*Services Page Single End*/}
+            </Swiper>
+          </div>
+        </section>
 
         {/*Process One End */}
 

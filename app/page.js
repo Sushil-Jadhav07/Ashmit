@@ -23,6 +23,7 @@ export default function Home() {
                 <Industries />
                 <Services />
                 <Feature/>
+            
             </Layout>
         </>
     )

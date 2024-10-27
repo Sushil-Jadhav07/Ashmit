@@ -383,7 +383,7 @@ export default function Industries() {
                         </div>
                       </div>
                       <div className="col-xl-7 col-lg-7">
-                        <div className="services-four__tab-content-right">
+                        <div className="services-four__tab-content-right px-3">
                           <h3 className="services-four__tab-content-title">
                             Insurance Strategy
                           </h3>

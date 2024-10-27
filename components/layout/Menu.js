@@ -26,9 +26,9 @@ export default function Menu() {
                 <li>
                     <Link href="about">About</Link>
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                     <Link href="#">Pages</Link>
-                    {/* <ul>
+                    <ul>
                         <li><Link href="team">Team</Link></li>
                         <li><Link href="team-carousel">Team Carousel</Link></li>
                         <li><Link href="team-details">Team Details</Link></li>
@@ -41,8 +41,8 @@ export default function Menu() {
                         <li><Link href="pricing-carousel">Pricing Carousel</Link></li>
                         <li><Link href="appointment">Appointment</Link></li>
                         <li><Link href="/error">404 Error</Link></li>
-                    </ul> */}
-                </li>
+                    </ul>
+                </li> */}
                 <li className="dropdown">
                     <Link href="services">Services</Link>
                     {/* <ul>
@@ -57,9 +57,9 @@ export default function Menu() {
                     </ul> */}
                 </li>
                 <li className="dropdown">
-                    <Link href="blog">News</Link>
-                    <ul className="sub-menu">
-                        {/* <li className="dropdown">
+                    <Link href="blog">Career</Link>
+                    {/* <ul className="sub-menu">
+                        <li className="dropdown">
                             <Link href="#">News Grid</Link>
                             <ul>
                                 <li><Link href="blog">No Sidebar</Link></li>
@@ -90,10 +90,10 @@ export default function Menu() {
                                 <li><Link href="blog-list-three-left">Left Sidebar</Link></li>
                                 <li><Link href="blog-list-three-right">Right Sidebar</Link></li>
                             </ul>
-                        </li> */}
+                        </li>
                         <li><Link href="blog-carousel">News Carousel</Link></li>
                         <li><Link href="blog-details">News details</Link></li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li>
                     <Link href="contact">Contact</Link>

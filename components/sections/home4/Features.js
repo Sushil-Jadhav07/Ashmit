@@ -7,7 +7,7 @@ export default function Features() {
         {/*Feature Three Start */}
         <section className="feature-three">
             <div className="container">
-                <div className="section-title-three text-center">
+                <div className="section-title-three text-center pb-5">
                     <div className="section-title-three__tagline-box">
                         <p className="section-title-three__tagline">Gamut of Services</p>
                     </div>

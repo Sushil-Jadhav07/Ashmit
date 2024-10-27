@@ -69,10 +69,11 @@ export default function Footer3() {
               </li>
             </ul>
           </div>
-          <div className="site-footer-three__middle">
+
+          <div className="site-footer-three__middle justify-content-center">
             <div className="row">
               <div
-                className="col-xl-5 col-lg-6 col-md-6 wow fadeInUp"
+                className="col-xl-5 col-lg-5 col-md-6 wow fadeInUp" style={{textAlign:"center"}}
                 data-wow-delay="100ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__about">
@@ -90,7 +91,7 @@ export default function Footer3() {
                     <br />
                     printing and typesetting industry.
                   </p>
-                  <div className="footer-widget-three__email">
+                  <div className="footer-widget-three__email" style={{textAlign:"center" , justifyContent:  "center"}} >
                     <a href="mailto:info@example.com">
                       <span className="icon-gmail"></span>
                       info@ashmitassociates.com
@@ -99,7 +100,7 @@ export default function Footer3() {
                 </div>
               </div>
               <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp " style={{textAlign:"center"}} 
                 data-wow-delay="200ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__company">
@@ -110,14 +111,12 @@ export default function Footer3() {
                     <li>
                       <a href="about">About</a>
                     </li>
-                    <li>
-                      <a href="team">Pages</a>
-                    </li>
+                    
                     <li>
                       <a href="portfolio">Services</a>
                     </li>
                     <li>
-                      <a href="news-1">News</a>
+                      <a href="news-1">Career</a>
                     </li>
                     <li>
                       <a href="contact">Contact</a>
@@ -156,7 +155,7 @@ export default function Footer3() {
                         </div> */}
 
               <div
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" style={{textAlign:"center"}}
                 data-wow-delay="400ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__subscribe">
@@ -193,6 +192,7 @@ export default function Footer3() {
             </div>
           </div>
         </div>
+
         <div className="site-footer-three__bottom">
           <div className="container">
             <div className="site-footer-three__bottom-inner">

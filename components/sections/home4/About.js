@@ -26,11 +26,11 @@ export default function About() {
                     </div>
                     <div className="col-xl-6">
                         <div className="about-four__right">
-                            <div className="section-title-three text-left">
+                            <div className="section-title-three text-lg-start text-center">
                                 <div className="section-title-three__tagline-box">
-                                    <p className="section-title-three__tagline">ABOUT US</p>
+                                    <p className="section-title-three__tagline ">ABOUT US</p>
                                 </div>
-                                <h2 className="section-title-three__title">Ashmit Jhunjhunwala</h2>
+                                <h2 className="section-title-three__title text-lg-start text-center">Ashmit Jhunjhunwala</h2>
                             </div>
                             {/* <p className="about-four__text-1">With Solid Team</p> */}
                             {/* <p className="about-four__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -61,7 +61,7 @@ export default function About() {
                                     </li>
                                 </ul>
                             </div> */}
-                            <div className="about-four__btn-box">
+                            <div className="about-four__btn-box text-lg-start text-center">
                                 <Link href="about" className="about-four__btn thm-btn">Learn More</Link>
                             </div>
                         </div>
