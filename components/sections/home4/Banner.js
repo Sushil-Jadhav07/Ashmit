@@ -52,10 +52,10 @@ export default function Banner() {
                             <h2 className="main-slider-three__title">Get more of what <br/> you want from your <br/> business
                             </h2>
                             <p className="main-slider-three__text">Lorem Ipsum is simply dummy text of the printing</p>
-                            {/* <div className="main-slider-three__btn-box">
+                            <div className="main-slider-three__btn-box">
                                 <Link href="contact" className="thm-btn main-slider__btn-1">Get Consulting</Link>
                                 <Link href="about" className="thm-btn main-slider__btn-2">Learn More</Link>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
