@@ -25,11 +25,7 @@ export default function Industries() {
                   <p className="industries-served__text">
                     Ashmit since 2011 have catered to wide field of clients like
                     Insurance & Investment Advisory, NBFC, Manufacturing &
-                    Traders, Service Oriented businesses, Ecommerce His
-                    commitment to providing customized financial strategies has
-                    earned him a reputation for delivering exceptional,
-                    client-focused services. Ashmit’s core areas of expertise
-                    include:
+                    Traders, Service Oriented businesses, Ecommerce.
                   </p>
                 </div>
               </div>

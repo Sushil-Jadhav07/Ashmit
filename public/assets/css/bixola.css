@@ -2412,7 +2412,7 @@ ul {
 }
 
 .main-menu-four__logo img{
-  width: 75%;
+  width: 250px;
 
 }
 
@@ -7527,7 +7527,7 @@ ul {
   position: relative;
   display: block;
   background-color: #FAFAFA;
-  padding: 119px 0 120px;
+  padding: 90px 0 120px;
   z-index: 1;
 }
 
@@ -7537,7 +7537,11 @@ ul {
 
 .testimonial-two__bottom {
   position: relative;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
 }
 
 .testimonial-two__carousel {
@@ -7556,6 +7560,7 @@ ul {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   margin-top: 33px;
+  width: 400px;
 }
 
 .testimonial-two__single:hover {
@@ -10502,7 +10507,7 @@ ul {
 .site-footer-three__middle {
   position: relative;
   display: block;
-  padding: 95px 0 117px;
+  padding: 50px 0 100px;
   border-top: 1px solid rgba(var(--bixola-white-rgb), .10);
   border-bottom: 1px solid rgba(var(--bixola-white-rgb), .10);
   margin-top: 59px;
@@ -15286,7 +15291,7 @@ ul {
 
 .services-four__main-tab .tab-buttons .tab-btn {
   flex:0 0 33.3333%;
-  max-width: 33.3333%;
+  max-width: 24.3333%;
   width: 100%;
   padding: 0 10px;
   box-sizing: border-box;
@@ -15465,7 +15470,7 @@ ul {
 .services-four__tab-content-right {
   position: relative;
   display: block;
-  margin-top: 90px;
+  /* margin-top: 90px; */
   margin-left: 70px;
 }
 

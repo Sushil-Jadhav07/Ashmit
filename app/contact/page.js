@@ -111,14 +111,14 @@ export default function Home() {
                         />
                       </div>
                       <div className="col-12 mb-3 ">
-                        <label htmlFor="qualifications" className="form-label">
-                          Qualifications
+                        <label htmlFor="City" className="form-label">
+                          City
                         </label>
                         <input
                           type="text"
-                          id="qualifications"
+                          id="City"
                           className="form-control"
-                          placeholder="B.Tech, M.Tech"
+                          placeholder="Mumbai"
                         />
                       </div>
 
@@ -131,7 +131,7 @@ export default function Home() {
                           id="message"
                           className="form-control"
                           placeholder="Type here..."
-                          style={{ height: "150px" }}
+                          style={{ height: "160px" }}
                         ></textarea>
                       </div>
 
