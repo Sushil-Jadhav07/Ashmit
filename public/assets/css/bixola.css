@@ -7552,7 +7552,7 @@ ul {
   border-radius: var(--bixola-bdr-radius);
   background-color: var(--bixola-white);
   box-shadow: 0px 2px 8px -2px rgba(16, 24, 40, 0.10);
-  padding: 48px 35px 42px;
+  padding: 48px 23px 42px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   margin-top: 33px;

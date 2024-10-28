@@ -69,24 +69,7 @@ export default function Home() {
                     Accounting, Audit & Assurance, Taxation, Company
                     Structuring, and Litigation Support.
                   </p>
-                  {/* <ul className="about-two__points list-unstyled">
-                                    <li>
-                                        <div className="about-two__count count-box">
-                                            <h3>10</h3>
-                                        </div>
-                                        <p>Years Of <br/> Experience</p>
-                                    </li>
-                                    <li>
-                                        <div className="about-two__count count-box">
-                                            <h3>8</h3>
-                                            <span>k</span>
-                                        </div>
-                                        <p>Completed <br/> project</p>
-                                    </li>
-                                </ul> */}
-                  {/* <div className="about-two__btn-box">
-                                    <Link href="about" className="about-two__btn thm-btn-two">Learn About Us</Link>
-                                </div> */}
+                
                 </div>
               </div>
 
@@ -115,17 +98,19 @@ export default function Home() {
         </section>
         {/*About Two End */}
 
+
+
         {/* {about} */}
         <div className="container">
           <h3 className="section__title-two">
             Our Business & Financial Consulting <br /> Services
           </h3>
           <div className="services-two__bottom">
-            <Swiper
-              {...swiperOptions}
+            <div
+       
               className="services-two__carousel owl-carousel owl-theme thm-owl__carousel"
             >
-              <SwiperSlide>
+           
                 <div className="item">
                   <div className="services-two__single">
                     <div className="services-two__img-box">
@@ -152,8 +137,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
+             
                 <div className="item">
                   <div className="services-two__single">
                     <div className="services-two__img-box">
@@ -182,8 +166,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
+              
                 <div className="item">
                   <div className="services-two__single">
                     <div className="services-two__img-box">
@@ -213,132 +196,25 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            </Swiper>
+            
+            </div>
           </div>
         </div>
 
         {/*Process One Start */}
 
         {/*Feature One Start */}
-        <section className="feature-one">
-          <div className="container">
+        <section className="services-carousel-page py-5">
+        <div className="container">
+          <div className="services-four__top text-center mb-4">
             <div className="row">
-              <div className="col-xl-4">
-                <div className="feature-one__left">
-                  <div className="section-title text-left">
-                    <div className="section-title__tagline-box">
-                      <p className="section-title__tagline">Why us</p>
-                    </div>
-                    <h2 className="section-title__title">
-                      Why we are the best.
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-8">
-                <div className="feature-one__right">
-                  <div className="row">
-                    {/*Feature One Single Start*/}
-                    <div
-                      className="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft"
-                      data-wow-delay="100ms"
-                    >
-                      <div className="feature-one__single">
-                        <div
-                          className="feature-one__single-hover-bg"
-                          style={{
-                            backgroundImage:
-                              "url(assets/images/resources/feature-1-1.jpg)",
-                          }}
-                        ></div>
-                        <div className="feature-one__icon">
-                          <span className="icon-business-advice"></span>
-                        </div>
-                        <h3 className="feature-one__title">
-                          <Link href="business-audit">SERVICES</Link>
-                        </h3>
-                        <p className="feature-one__text">
-                          All type of industries, services, and operational
-                          levels, we help our clients ensure excellence by
-                          giving them the benefit into this field since 2019
-                          years of experience
-                        </p>
-                      </div>
-                    </div>
-                    {/*Feature One Single End*/}
-                    {/*Feature One Single Start*/}
-                    <div
-                      className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                      data-wow-delay="200ms"
-                    >
-                      <div className="feature-one__single">
-                        <div
-                          className="feature-one__single-hover-bg"
-                          style={{
-                            backgroundImage:
-                              "url(assets/images/resources/feature-1-1.jpg)",
-                          }}
-                        ></div>
-                        <div className="feature-one__icon">
-                          <span className="icon-financial-advice"></span>
-                        </div>
-                        <h3 className="feature-one__title">
-                          <Link href="financial-advices">EXPERTISE</Link>
-                        </h3>
-                        <p className="feature-one__text">
-                          Our expertise is to simplify and interpret, complex
-                          information to be understood, by the client who is not
-                          of the, finance and tax background.
-                          <br />
-                          <br />
-                        </p>
-                      </div>
-                    </div>
-                    {/*Feature One Single End*/}
-                    {/*Feature One Single Start*/}
-                    <div
-                      className="col-xl-4 col-lg-6 col-md-6 wow fadeInRight"
-                      data-wow-delay="300ms"
-                    >
-                      <div className="feature-one__single">
-                        <div
-                          className="feature-one__single-hover-bg"
-                          style={{
-                            backgroundImage:
-                              "url(assets/images/resources/feature-1-1.jpg)",
-                          }}
-                        ></div>
-                        <div className="feature-one__icon">
-                          <span className="icon-risk-management"></span>
-                        </div>
-                        <h3 className="feature-one__title">
-                          <Link href="tax-strategy">WORK</Link>
-                        </h3>
-                        <p className="feature-one__text">
-                          Ashmit & Associates focus on Audit & Assurance,
-                          Taxation Consultancy, Customizing our services based
-                          on the clients requirements has been our key strength.
-                        </p>
-                      </div>
-                    </div>
-                    {/*Feature One Single End*/}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*Feature One Start */}
-
-        <section className="services-carousel-page">
-          <div className="services-four__top">
-            <div className="row">
-              <div className="col-xl-12 col-lg-12">
+              <div className="col-12">
                 <div className="services-four__left">
                   <div className="section-title-three-text-left">
                     <div className="section-title-three__tagline-box">
-                      <p className="section-title-three__tagline">Why Us</p>
+                      <p className="section-title-three__tagline text-uppercase mb-2">
+                        Why Us
+                      </p>
                     </div>
                     <h2 className="section-title-three__title">
                       Why we are the best
@@ -346,96 +222,188 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-xl-6 col-lg-6">
-                            <div className="services-four__right">
-                                <p className="services-four__text">It is a long established fact that a reader will be
-                                    distracted by the readable content of a page when looking at its layout.
-                                </p>
-                            </div>
-                        </div> */}
             </div>
           </div>
 
-          <div className="container">
-            <Swiper
-              {...swiperOptions}
-              className="services-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style"
-            >
-              {/*Services Page Single Start*/}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="services-page__single">
-                    <h3 className="services-page__title">
-                      <Link href="business-audit">SERVICES</Link>
-                    </h3>
-                    <div className="services-page__icon">
-                      <span className="icon-report"></span>
-                    </div>
-                    <p className="services-page__text">
-                      All type of industries, services, and operational levels,
-                      we help our clients ensure excellence by giving them the
-                      benefit into this field since 2019 years of experience
-                    </p>
-                    <div className="services-page__btn">
-                      <Link href="business-audit">
-                        Learn More<span className="icon-right-arrow1"></span>
-                      </Link>
-                    </div>
-                  </div>
+          {/* Services items */}
+          <div className="row">
+            {/* Service Item 1 */}
+            <div className="col-md-4 mb-4">
+              <div className="services-page__single ">
+                <h3 className="services-page__title">
+                  <Link href="/business-audit">SERVICES</Link>
+                </h3>
+                <div className="services-page__icon mb-3">
+                  <span className="icon-report"></span>
                 </div>
-              </SwiperSlide>
-              {/*Services Page Single End*/}
-              {/*Services Page Single Start*/}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="services-page__single">
-                    <h3 className="services-page__title">
-                      <Link href="business-planning">EXPERTISE</Link>
-                    </h3>
-                    <div className="services-page__icon">
-                      <span className="icon-planning"></span>
-                    </div>
-                    <p className="services-page__text">
-                      Our expertise is to simplify and interpret, complex
-                      information to be understood, by the client who is not of
-                      the, finance and tax background.
-                    </p>
-                    <div className="services-page__btn">
-                      <Link href="business-planning">
-                        Learn More<span className="icon-right-arrow1"></span>
-                      </Link>
-                    </div>
-                  </div>
+                <p className="services-page__text">
+                  All types of industries, services, and operational levels, we help
+                  our clients ensure excellence by leveraging our experience since
+                  2019.
+                </p>
+                <div className="services-page__btn mt-3">
+                  <Link href="/business-audit" className="text-primary">
+                    Learn More <span className="icon-right-arrow1"></span>
+                  </Link>
                 </div>
-              </SwiperSlide>
-              {/*Services Page Single End*/}
-              {/*Services Page Single Start*/}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="services-page__single">
-                    <h3 className="services-page__title">
-                      <Link href="financial-advices">WORK</Link>
-                    </h3>
-                    <div className="services-page__icon">
-                      <span className="icon-financial-advices11"></span>
-                    </div>
-                    <p className="services-page__text">
-                      Ashmit & Associates focus on Audit & Assurance, Taxation
-                      Consultancy, Customizing our services based on the clients
-                      requirements has been our key strength.
-                    </p>
-                    <div className="services-page__btn">
-                      <Link href="financial-advices">
-                        Learn More<span className="icon-right-arrow1"></span>
-                      </Link>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            {/* Service Item 2 */}
+            <div className="col-md-4 mb-4">
+              <div className="services-page__single">
+                <h3 className="services-page__title">
+                  <Link href="/business-planning">EXPERTISE</Link>
+                </h3>
+                <div className="services-page__icon mb-3">
+                  <span className="icon-planning"></span>
                 </div>
-              </SwiperSlide>
-              {/*Services Page Single End*/}
-            </Swiper>
+                <p className="services-page__text">
+                  We simplify complex information for clients, even if they do not
+                  have a finance or tax background.
+                </p>
+                <div className="services-page__btn mt-3">
+                  <Link href="/business-planning" className="text-primary">
+                    Learn More <span className="icon-right-arrow1"></span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Item 3 */}
+            <div className="col-md-4 mb-4">
+              <div className="services-page__single ">
+                <h3 className="services-page__title">
+                  <Link href="/financial-advices">WORK</Link>
+                </h3>
+                <div className="services-page__icon mb-3">
+                  <span className="icon-financial-advices11"></span>
+                </div>
+                <p className="services-page__text">
+                  Ashmit & Associates specialize in Audit & Assurance and Taxation
+                  Consultancy, customizing services based on client needs.
+                </p>
+                <div className="services-page__btn mt-3">
+                  <Link href="/financial-advices" className="text-primary">
+                    Learn More <span className="icon-right-arrow1"></span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
+        {/*Feature One Start */}
+
+        {/*Feature One Start */}
+      <section className="feature-one">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-4">
+              <div className="feature-one__left">
+                <div className="section-title text-center text-lg-start">
+                  <div className="section-title__tagline-box">
+                    <p className="section-title__tagline">Why us</p>
+                  </div>
+                  <h2 className="section-title__title">Why we are the best.</h2>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-8">
+              <div className="feature-one__right">
+                <div className="row">
+                  {/*Feature One Single Start*/}
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft"
+                    data-wow-delay="100ms"
+                  >
+                    <div className="feature-one__single">
+                      <div
+                        className="feature-one__single-hover-bg"
+                        style={{
+                          backgroundImage:
+                            "url(assets/images/resources/feature-1-1.jpg)",
+                        }}
+                      ></div>
+                      <div className="feature-one__icon">
+                        <span className="icon-business-advice"></span>
+                      </div>
+                      <h3 className="feature-one__title">
+                        <Link href="business-audit">SERVICES</Link>
+                      </h3>
+                      <p className="feature-one__text">
+                        All type of industries, services, and operational
+                        levels, we help our clients ensure excellence by giving
+                        them the benefit into this field since 2019 years of
+                        experience
+                      </p>
+                    </div>
+                  </div>
+                  {/*Feature One Single End*/}
+                  {/*Feature One Single Start*/}
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
+                    <div className="feature-one__single">
+                      <div
+                        className="feature-one__single-hover-bg"
+                        style={{
+                          backgroundImage:
+                            "url(assets/images/resources/feature-1-1.jpg)",
+                        }}
+                      ></div>
+                      <div className="feature-one__icon">
+                        <span className="icon-financial-advice"></span>
+                      </div>
+                      <h3 className="feature-one__title">
+                        <Link href="financial-advices">EXPERTISE</Link>
+                      </h3>
+                      <p className="feature-one__text">
+                        Our expertise is to simplify and interpret, complex
+                        information to be understood, by the client who is not
+                        of the, finance and tax background.
+                        <br />
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                  {/*Feature One Single End*/}
+                  {/*Feature One Single Start*/}
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-6 wow fadeInRight"
+                    data-wow-delay="300ms"
+                  >
+                    <div className="feature-one__single">
+                      <div
+                        className="feature-one__single-hover-bg"
+                        style={{
+                          backgroundImage:
+                            "url(assets/images/resources/feature-1-1.jpg)",
+                        }}
+                      ></div>
+                      <div className="feature-one__icon">
+                        <span className="icon-risk-management"></span>
+                      </div>
+                      <h3 className="feature-one__title">
+                        <Link href="tax-strategy">WORK</Link>
+                      </h3>
+                      <p className="feature-one__text">
+                        Ashmit & Associates focus on Audit & Assurance, Taxation
+                        Consultancy, Customizing our services based on the
+                        clients requirements has been our key strength.
+                      </p>
+                    </div>
+                  </div>
+                  {/*Feature One Single End*/}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Feature ends here */}
 
         {/*Process One End */}
 
