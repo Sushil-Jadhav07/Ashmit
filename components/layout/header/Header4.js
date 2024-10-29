@@ -96,7 +96,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu }) {
                 <nav className="main-menu main-menu-four">
                     <div className="main-menu-four__wrapper">
                         <div className="main-menu-four__wrapper-inner">
-                            <div className="main-menu-four__logo">
+                            <div className="main-menu-four__logo-mobile">
                                 <Link href="/"><img src="assets/images/resources/CA_logo.png" alt=""/></Link>
                             </div>
                             <div className="main-menu-four__main-menu-box">

@@ -65,7 +65,7 @@ export default function Feature() {
           {/* Services items */}
           <div className="row">
             {/* Service Item 1 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 " style={{height:"150px !important" }}>
               <div className="services-page__single ">
                 <h3 className="services-page__title">
                   <Link href="">SERVICES</Link>
@@ -79,7 +79,7 @@ export default function Feature() {
                   2019.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="" className="text-primary">
+                  <Link href="contact" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default function Feature() {
                   have a finance or tax background.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="" className="text-primary">
+                  <Link href="contact" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -121,7 +121,7 @@ export default function Feature() {
                   Consultancy, customizing services based on client needs.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="" className="text-primary">
+                  <Link href="contact" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>

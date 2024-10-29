@@ -220,7 +220,7 @@ export default function Home() {
                     experience since 2019.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="" className="text-primary">
+                    <Link href="contact" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>
@@ -231,7 +231,7 @@ export default function Home() {
               <div className="col-md-4 mb-4">
                 <div className="services-page__single">
                   <h3 className="services-page__title">
-                    <Link href="/business-planning">EXPERTISE</Link>
+                    <Link href="">EXPERTISE</Link>
                   </h3>
                   <div className="services-page__icon mb-3">
                     <span className="icon-planning"></span>
@@ -241,7 +241,7 @@ export default function Home() {
                     not have a finance or tax background.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="" className="text-primary">
+                    <Link href="contact" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>
@@ -252,7 +252,7 @@ export default function Home() {
               <div className="col-md-4 mb-4">
                 <div className="services-page__single ">
                   <h3 className="services-page__title">
-                    <Link href="/financial-advices">WORK</Link>
+                    <Link href="">WORK</Link>
                   </h3>
                   <div className="services-page__icon mb-3">
                     <span className="icon-financial-advices11"></span>
@@ -263,7 +263,7 @@ export default function Home() {
                     needs.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="" className="text-primary">
+                    <Link href="contact" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>

@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { MdCorporateFare } from "react-icons/md";
+
 
 export default function Industries() {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(4);
   const handleOnClick = (index) => {
     setActiveIndex(index);
   };
@@ -124,7 +126,7 @@ export default function Industries() {
                 >
                   <div className="services-four__tab-buttons-single">
                     <div className="services-four__tab-buttons-icon">
-                      <span className="icon-icon-manage-investment"></span>
+                      <span><MdCorporateFare/></span>
                     </div>
                     <h4 className="services-four__tab-buttons-title">
                       CORPORATE

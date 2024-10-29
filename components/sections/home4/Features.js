@@ -24,12 +24,14 @@ export default function Features() {
                             <div className="feature-three__shape-2"></div>
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
+                                
+                                
                                 <span className="icon-bank-building"></span>
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
-                            <h3 className="feature-three__title"><Link href="business-planning">Management and Financial Advisory</Link></h3>
+                            <h3 className="feature-three__title"><Link href="">Management and Financial Advisory</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="">Read more</Link>
+                               
                             </div>
                         </div>
                     </div>
@@ -44,12 +46,12 @@ export default function Features() {
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
                                 
-                                <span className="icon-financial-advice " ></span>
+                                <span ><GoLaw/></span>
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
-                            <h3 className="feature-three__title"><Link href="financial-advices">Corporate Law Consultancy and Compliance Services</Link></h3>
+                            <h3 className="feature-three__title"><Link href="">Corporate Law Consultancy and Compliance Services</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="">Read more</Link>
+                               
                             </div>
                         </div>
                     </div>
@@ -63,12 +65,15 @@ export default function Features() {
                             <div className="feature-three__shape-2"></div>
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
-                                <span className="icon-assets"></span>
+                            <span className="icon-financial-advice " ></span>
+
+                                
                             </div>
+
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
-                            <h3 className="feature-three__title"><Link href="business-audit">Direct & Indirect <br/> Taxes Advisory </Link></h3>
+                            <h3 className="feature-three__title"><Link href="">Direct & Indirect <br/> Taxes Advisory </Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="">Read more</Link>
+                               
                             </div>
                         </div>
                     </div>
@@ -82,12 +87,13 @@ export default function Features() {
                             <div className="feature-three__shape-2"></div>
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
-                                <span className="icon-planning"></span>
+                            <span className="icon-icon-business-audit"></span>
+                                {/* <span className="icon-planning"></span> */}
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
-                            <h3 className="feature-three__title"><Link href="tax-strategy">Audit & Assurance</Link></h3>
+                            <h3 className="feature-three__title"><Link href="">Audit & Assurance</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="">Read more</Link>
+                                
                             </div>
                         </div>
                     </div>
@@ -101,12 +107,13 @@ export default function Features() {
                             <div className="feature-three__shape-2"></div>
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
-                                <span className="icon-planning"></span>
+                            <span className="icon-assets"></span>
+                                {/* <span className="icon-planning"></span> */}
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
-                            <h3 className="feature-three__title"><Link href="tax-strategy">ROC Compliances</Link></h3>
+                            <h3 className="feature-three__title"><Link href="">ROC Compliances</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="">Read more</Link>
+                                
                             </div>
                         </div>
                     </div>
