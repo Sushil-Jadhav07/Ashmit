@@ -44,7 +44,7 @@ export default function Industries() {
                       <span className="icon-bank-building"></span>
                     </div>
                     <h3 className="industries-served__title">
-                      <Link href="business-planning">
+                      <Link href="">
                       Accounting
                       </Link>
                     </h3>
@@ -63,7 +63,7 @@ export default function Industries() {
                       <span className="icon-icon-business-audit"></span>
                     </div>
                     <h3 className="industries-served__title">
-                      <Link href="business-audit">
+                      <Link href="">
                       Audit & Assurance
                       </Link>
                     </h3>
@@ -82,7 +82,7 @@ export default function Industries() {
                       <span className="icon-financial-advice"></span>
                     </div>
                     <h3 className="industries-served__title">
-                      <Link href="tax-strategy">
+                      <Link href="">
                       Taxation
                       </Link>
                     </h3>
@@ -101,7 +101,7 @@ export default function Industries() {
                       <span className="icon-icon-insurance-strategy"></span>
                     </div>
                     <h3 className="industries-served__title">
-                      <Link href="insurance-strategy">
+                      <Link href="">
                       Business Planning <br/>
                       & Structuring
                       </Link>
@@ -121,7 +121,7 @@ export default function Industries() {
                       <span className="icon-icon-start-ups"></span>
                     </div>
                     <h3 className="industries-served__title">
-                      <Link href="financial-advices">
+                      <Link href="">
                       Litigation
                       Support
                       </Link>

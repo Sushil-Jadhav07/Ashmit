@@ -15,7 +15,7 @@ export default function Team() {
                         </div>
                     </div>
                     <div className="team-six__btn-box">
-                        <Link href="team" className="team-six__btn thm-btn">Join Our Team</Link>
+                        <Link href="" className="team-six__btn thm-btn">Join Our Team</Link>
                     </div>
                 </div>
                 <div className="team-six__bottom">
@@ -27,10 +27,10 @@ export default function Team() {
                                     <div className="team-six__img">
                                         <img src="assets/images/team/team-6-1.jpg" alt=""/>
                                         <div className="team-six__social">
-                                            <Link href="team-details"><span className="fab fa-facebook"></span></Link>
-                                            <Link href="team-details"><span className="fab fa-twitter"></span></Link>
-                                            <Link href="team-details"><span className="fab fa-instagram"></span></Link>
-                                            <Link href="team-details"><span className="fab fa-linkedin"></span></Link>
+                                            <Link href=""><span className="fab fa-facebook"></span></Link>
+                                            <Link href=""><span className="fab fa-twitter"></span></Link>
+                                            <Link href=""><span className="fab fa-instagram"></span></Link>
+                                            <Link href=""><span className="fab fa-linkedin"></span></Link>
                                         </div>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="News">
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Career">
         <section className="contact-page">
           <div className="container">
             <div className="row">

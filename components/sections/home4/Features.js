@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GoLaw } from "react-icons/go";
 
 
 export default function Features() {
@@ -28,7 +29,7 @@ export default function Features() {
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="business-planning">Management and Financial Advisory</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="business-planning">Read more</Link>
+                                <Link href="">Read more</Link>
                             </div>
                         </div>
                     </div>
@@ -42,12 +43,13 @@ export default function Features() {
                             <div className="feature-three__shape-2"></div>
                             <div className="feature-three__shape-3"></div>
                             <div className="feature-three__icon">
-                                <span className="icon-financial-advice"></span>
+                                
+                                <span className="icon-financial-advice " ></span>
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="financial-advices">Corporate Law Consultancy and Compliance Services</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="financial-advices">Read more</Link>
+                                <Link href="">Read more</Link>
                             </div>
                         </div>
                     </div>
@@ -66,7 +68,7 @@ export default function Features() {
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="business-audit">Direct & Indirect <br/> Taxes Advisory </Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="business-audit">Read more</Link>
+                                <Link href="">Read more</Link>
                             </div>
                         </div>
                     </div>
@@ -85,7 +87,7 @@ export default function Features() {
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="tax-strategy">Audit & Assurance</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="tax-strategy">Read more</Link>
+                                <Link href="">Read more</Link>
                             </div>
                         </div>
                     </div>
@@ -104,7 +106,7 @@ export default function Features() {
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="tax-strategy">ROC Compliances</Link></h3>
                             <div className="feature-three__btn">
-                                <Link href="tax-strategy">Read more</Link>
+                                <Link href="">Read more</Link>
                             </div>
                         </div>
                     </div>

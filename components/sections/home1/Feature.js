@@ -68,7 +68,7 @@ export default function Feature() {
             <div className="col-md-4 mb-4">
               <div className="services-page__single ">
                 <h3 className="services-page__title">
-                  <Link href="/business-audit">SERVICES</Link>
+                  <Link href="">SERVICES</Link>
                 </h3>
                 <div className="services-page__icon mb-3">
                   <span className="icon-report"></span>
@@ -79,7 +79,7 @@ export default function Feature() {
                   2019.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="/business-audit" className="text-primary">
+                  <Link href="" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -90,7 +90,7 @@ export default function Feature() {
             <div className="col-md-4 mb-4">
               <div className="services-page__single">
                 <h3 className="services-page__title">
-                  <Link href="/business-planning">EXPERTISE</Link>
+                  <Link href="">EXPERTISE</Link>
                 </h3>
                 <div className="services-page__icon mb-3">
                   <span className="icon-planning"></span>
@@ -100,7 +100,7 @@ export default function Feature() {
                   have a finance or tax background.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="/business-planning" className="text-primary">
+                  <Link href="" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -121,7 +121,7 @@ export default function Feature() {
                   Consultancy, customizing services based on client needs.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="/financial-advices" className="text-primary">
+                  <Link href="" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>

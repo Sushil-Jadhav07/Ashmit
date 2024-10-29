@@ -38,9 +38,9 @@ export default function Home() {
         {/*Feature Three Start */}
         <section className="feature-three">
           <div className="container">
-            <div className="section-title-three text-center">
+            <div className="section-title-three text-center pb-5">
               <div className="section-title-three__tagline-box">
-                <p className="section-title-three__tagline">
+                <p className="section-title-three__tagline ">
                   Gamut of Services
                 </p>
               </div>
@@ -68,12 +68,12 @@ export default function Home() {
                   </div>
                   {/* <p className="feature-three__sub-title">Our Industries</p> */}
                   <h3 className="feature-three__title">
-                    <Link href="business-planning">
+                    <Link href="">
                       Management and Financial Advisory
                     </Link>
                   </h3>
                   <div className="feature-three__btn">
-                    <Link href="business-planning">Read more</Link>
+                    <Link href="">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -99,12 +99,12 @@ export default function Home() {
                   </div>
                   {/* <p className="feature-three__sub-title">Our Industries</p> */}
                   <h3 className="feature-three__title">
-                    <Link href="financial-advices">
+                    <Link href="">
                       Corporate Law Consultancy and Compliance Services
                     </Link>
                   </h3>
                   <div className="feature-three__btn">
-                    <Link href="financial-advices">Read more</Link>
+                    <Link href="">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -130,12 +130,12 @@ export default function Home() {
                   </div>
                   {/* <p className="feature-three__sub-title">Our Industries</p> */}
                   <h3 className="feature-three__title">
-                    <Link href="business-audit">
+                    <Link href="">
                       Direct & Indirect <br /> Taxes Advisory{" "}
                     </Link>
                   </h3>
                   <div className="feature-three__btn">
-                    <Link href="business-audit">Read more</Link>
+                    <Link href="">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -161,10 +161,10 @@ export default function Home() {
                   </div>
                   {/* <p className="feature-three__sub-title">Our Industries</p> */}
                   <h3 className="feature-three__title">
-                    <Link href="tax-strategy">Audit & Assurance</Link>
+                    <Link href="">Audit & Assurance</Link>
                   </h3>
                   <div className="feature-three__btn">
-                    <Link href="tax-strategy">Read more</Link>
+                    <Link href="">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -190,10 +190,10 @@ export default function Home() {
                   </div>
                   {/* <p className="feature-three__sub-title">Our Industries</p> */}
                   <h3 className="feature-three__title">
-                    <Link href="tax-strategy">ROC Compliances</Link>
+                    <Link href="">ROC Compliances</Link>
                   </h3>
                   <div className="feature-three__btn">
-                    <Link href="tax-strategy">Read more</Link>
+                    <Link href="">Read more</Link>
                   </div>
                 </div>
               </div>

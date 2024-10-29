@@ -117,7 +117,7 @@ export default function Home() {
                   </div>
                   <div className="services-two__content">
                     <h3 className="services-two__title">
-                      <Link href="business-audit">Firm’s Strategy</Link>
+                      <Link href="">Firm’s Strategy</Link>
                     </h3>
                     <p className="services-two__text">
                       To reach new heights and add feathers to our wisdom & to
@@ -141,7 +141,7 @@ export default function Home() {
                   </div>
                   <div className="services-two__content">
                     <h3 className="services-two__title">
-                      <Link href="tax-strategy">Our Values</Link>
+                      <Link href="">Our Values</Link>
                     </h3>
                     <p className="services-two__text">
                       At ASHMIT & ASSOCIATES, we deliver all services with
@@ -165,7 +165,7 @@ export default function Home() {
                   </div>
                   <div className="services-two__content">
                     <h3 className="services-two__title">
-                      <Link href="financial-advices">Our Mission</Link>
+                      <Link href="">Our Mission</Link>
                     </h3>
                     <p className="services-two__text">
                       To become a leading firm of Chartered Accountants known
@@ -209,7 +209,7 @@ export default function Home() {
               <div className="col-md-4 mb-4">
                 <div className="services-page__single ">
                   <h3 className="services-page__title">
-                    <Link href="/business-audit">SERVICES</Link>
+                    <Link href="">SERVICES</Link>
                   </h3>
                   <div className="services-page__icon mb-3">
                     <span className="icon-report"></span>
@@ -220,7 +220,7 @@ export default function Home() {
                     experience since 2019.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="/business-audit" className="text-primary">
+                    <Link href="" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>
@@ -241,7 +241,7 @@ export default function Home() {
                     not have a finance or tax background.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="/business-planning" className="text-primary">
+                    <Link href="" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>
@@ -263,7 +263,7 @@ export default function Home() {
                     needs.
                   </p>
                   <div className="services-page__btn mt-3">
-                    <Link href="/financial-advices" className="text-primary">
+                    <Link href="" className="text-primary">
                       Learn More <span className="icon-right-arrow1"></span>
                     </Link>
                   </div>

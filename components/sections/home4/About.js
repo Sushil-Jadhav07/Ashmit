@@ -7,6 +7,12 @@ export default function About() {
 
         {/*About Four Start*/}
         <section className="about-four">
+            <div className="about-two__shape-2 zoominout">
+                <img src="assets/images/shapes/about-two-shape-2.png" alt=""/>
+            </div>
+            <div className="about-two__shape-3 float-bob-y">
+                <img src="assets/images/shapes/about-two-shape-3.png" alt=""/>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6">
@@ -26,18 +32,22 @@ export default function About() {
                     </div>
                     <div className="col-xl-6">
                         <div className="about-four__right">
+                        <div className="about-two__right">
+                           
+                                
+
+                            </div>
                             <div className="section-title-three text-lg-start text-center">
                                 <div className="section-title-three__tagline-box">
-                                    <p className="section-title-three__tagline ">ABOUT US</p>
+                                    {/* <p className="section-title-three__tagline ">ABOUT US</p> */}
                                 </div>
                                 <h2 className="section-title-three__title text-lg-start text-center">Ashmit Jhunjhunwala</h2>
                             </div>
                             {/* <p className="about-four__text-1">With Solid Team</p> */}
                             {/* <p className="about-four__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                 do eiusmod tempor incididunt</p> */}
-                            <p className="about-four__text-3">Founded & lead by CA Ashmit Jhunjhunwala. We along with our team
-                                of professionals have established our presence in the related professional fields. From the day of its existence, we have started
-                                growing into a multi faceted Chartered Accountancy firm offering broad spectrum of services to our diverse clientele
+                            <p className="about-four__text-3">Ashmit Jhunjhunwala is a qualified Chartered Accountant with an experience of working into this field since 2019. His expertise lies in Direct Taxation & Audit and Assurance. Hands on experience in Income Tax and Statutory Auditing. He has advised clients with complex transactions across sectors including Manufacturing, Services and Information Technology.
+                            His key areas of expertise also include Transaction Modeling, Accounting Advisory, DTAA treaties and NRI taxation matters, Tax Planning, Business Setup, Overseas Accounting, International tax advisory. He has been actively engaged in Companies and LLP Formations and holds a good command in Statutory Audits and Start up Advisory services.
                             </p>
                             {/* <div className="about-four__points-box">
                                 <ul className="about-four__points list-unstyled">
