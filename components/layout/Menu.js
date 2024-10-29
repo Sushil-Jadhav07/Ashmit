@@ -57,7 +57,7 @@ export default function Menu() {
                     </ul> */}
                 </li>
                 <li className="dropdown">
-                    <Link href="blog">Career</Link>
+                    <Link href="career">Career</Link>
                     {/* <ul className="sub-menu">
                         <li className="dropdown">
                             <Link href="#">News Grid</Link>
