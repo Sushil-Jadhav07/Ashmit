@@ -172,8 +172,9 @@ export default function Home() {
                         </label>
                         <div className="d-flex align-items-center">
                           <label
-                            htmlFor="file-upload"
-                            className="btn btn-primary me-3 px-3"
+                            htmlFor="resume"
+
+                            className="btn btn-outline-secondary me-3"
                           >
                             Upload a file
                           </label>
@@ -187,7 +188,6 @@ export default function Home() {
                           />
                         </div>
                       </div>
-
                       
                       {/* <div className="col-12 mt-5 text-center">
                         <label
@@ -196,6 +196,12 @@ export default function Home() {
                         >
                           Resume
                         </label>
+                        <label
+                            htmlFor="file-upload"
+                            className="btn btn-outline-secondary me-3"
+                          >
+                            Upload a file
+                          </label>
                         <input
                           accept=".pdf"
                           type="file"
