@@ -1,8 +1,53 @@
 "use client";
-import Layout from "@/components/layout/Layout";
 
+import Layout from "@/components/layout/Layout";
+import { useState } from "react";
+import { client } from "../client";
 import Link from "next/link";
+import { toast } from "react-toastify";
+// import e from "@/documentation/assets/bundles/lightgallery.bundle";
 export default function Home() {
+
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [phone,setPhone] = useState("");
+  const [city,setCity] = useState("");
+  const [message,setMessage] = useState("");
+
+  const sendMessage = async () => {
+    console.log("Hii")
+    const doc = {
+      _type: "contact",
+      name: name,
+      email: email,
+      number: phone,
+      city: city,
+      message: message,
+
+    };
+
+    client.create(doc)
+    .then((res) => {
+      toast.success("Message Sent");
+      window.location.reload();
+    })
+    .catch((error) => {
+      toast.error("Failed to send message");
+      console.error(error);
+    });
+
+    setName("")
+    setEmail("");
+    setPhone("");
+    setCity("");
+    setMessage("");
+    
+    // router.push('/')
+
+  };
+  
+
+
   return (
     <>
       <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Contact">
@@ -80,9 +125,12 @@ export default function Home() {
                         </label>
                         <input
                           type="text"
+                          value={name}
+                          name="name"
+                          onChange={(e) => setName(e.target.value)}
                           id="name"
                           className="form-control"
-                          placeholder="John Smith"
+                          placeholder="name"
                           required
                         />
                       </div>
@@ -93,6 +141,9 @@ export default function Home() {
                         <input
                           type="email"
                           id="email"
+                          name="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           className="form-control"
                           placeholder="e.g: your@email.com"
                           required
@@ -103,8 +154,11 @@ export default function Home() {
                           Phone Number *
                         </label>
                         <input
-                          type="tel"
+                          type="text"
                           id="phone"
+                          name="number"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
                           className="form-control"
                           placeholder="+91 xxxxx xxxxx"
                           required
@@ -117,6 +171,9 @@ export default function Home() {
                         <input
                           type="text"
                           id="City"
+                          name="city"
+                          value={city}
+                          onChange={(e) => setCity(e.target.value)}
                           className="form-control"
                           placeholder="Mumbai"
                         />
@@ -129,6 +186,8 @@ export default function Home() {
                         </label>
                         <textarea
                           id="message"
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           className="form-control"
                           placeholder="Type here..."
                           style={{ height: "160px" }}
@@ -137,7 +196,7 @@ export default function Home() {
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
-                        <button type="submit" className="btn btn-primary">
+                        <button onClick={sendMessage} type="submit" className="btn btn-primary">
                           SEND MESSAGE
                         </button>
                       </div>
@@ -158,5 +217,5 @@ export default function Home() {
         </section>
       </Layout>
     </>
-  );
+  )
 }

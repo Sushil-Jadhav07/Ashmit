@@ -10,6 +10,8 @@
     "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
   },
   "dependencies": {
+    "@sanity/client": "^6.22.2",
+    "@sanity/image-url": "^1.0.2",
     "isotope-layout": "^3.0.6",
     "next": "13.4.19",
     "react": "18.2.0",
@@ -17,6 +19,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^5.3.0",
     "react-modal-video": "^2.0.1",
+    "react-toastify": "^10.0.6",
     "sass": "^1.66.1",
     "swiper": "^10.2.0",
     "wowjs": "^1.1.3"

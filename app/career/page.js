@@ -1,25 +1,80 @@
+"use client";
 import Layout from "@/components/layout/Layout";
-import Link from "next/link";
+
+import { useState } from "react";
+import { client } from "../client";
+import { toast } from "react-toastify";
 export default function Home() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [qualifications, setQualifications] = useState("");
+  const [resume, setResume] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendMessage = async () => {
+    console.log(resume);
+    const doc = {
+      _type: "career",
+      name: name,
+      email: email,
+      number: phone,
+      qualifications: qualifications,
+      resume: {
+        _type: "file",
+        asset: {
+          _type: "reference",
+          _ref: resume?._id,
+        },
+      },
+      message: message,
+    };
+
+    client
+      .create(doc)
+      .then((res) => {
+        toast.success("Message Sent");
+        window.location.reload();
+      })
+      .catch((error) => {
+        toast.error("Failed to send message");
+        console.error(error);
+      });
+    // router.push('/')
+  };
+
+  const handleupload = (e) => {
+    const { type, name } = e.target.files[0];
+    client.assets
+      .upload("file", e.target.files[0], {
+        contentType: type,
+        filename: name,
+      })
+      .then((document) => {
+        setResume(document);
+      })
+      .catch((error) => {
+        console.log("Image upload error", error);
+      });
+  };
   return (
     <>
       <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Career">
         <section className="contact-page">
           <div className="container">
             <div className="row">
-            <div className="col-xl-12 col-lg-12">
+              <div className="col-xl-12 col-lg-12">
                 <div className="services-four__left">
                   <div className="section-title-three-text-left">
                     <div className="section-title-three__tagline-box">
                       <p className="section-title-three__tagline">
-                      JOIN THE TEAM
+                        JOIN THE TEAM
                       </p>
                     </div>
                     <h2 className="contact-page__sub-title text-center">
-                        
-                    Ashmit & Associate is always looking for self - driven, passionate and skilled individuals. If you would like to be a part of our team, please fill the form below:
-
-
+                      Ashmit & Associate is always looking for self - driven,
+                      passionate and skilled individuals. If you would like to
+                      be a part of our team, please fill the form below:
                     </h2>
                   </div>
                 </div>
@@ -27,8 +82,10 @@ export default function Home() {
 
               <div className="col-xl-12 col-lg-12">
                 <div className="contact-page__left bg-white p-4 rounded shadow-sm">
-                  <h3 className="contact-page__title mb-3 text-center">Get in Touch</h3>
-                  
+                  <h3 className="contact-page__title mb-3 text-center">
+                    Get in Touch
+                  </h3>
+
                   <form
                     action="assets/inc/sendemail.php"
                     className="contact-page__form contact-form-validated"
@@ -40,6 +97,9 @@ export default function Home() {
                         </label>
                         <input
                           type="text"
+                          value={name}
+                          name="name"
+                          onChange={(e) => setName(e.target.value)}
                           id="name"
                           className="form-control"
                           placeholder="John Smith"
@@ -53,6 +113,9 @@ export default function Home() {
                         <input
                           type="email"
                           id="email"
+                          name="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           className="form-control"
                           placeholder="e.g: your@email.com"
                           required
@@ -63,8 +126,11 @@ export default function Home() {
                           Phone Number *
                         </label>
                         <input
-                          type="tel"
+                          type="text"
                           id="phone"
+                          name="number"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
                           className="form-control"
                           placeholder="+91 xxxx xxxxx"
                           required
@@ -77,6 +143,8 @@ export default function Home() {
                         <input
                           type="text"
                           id="qualifications"
+                          value={qualifications}
+                          onChange={(e) => setQualifications(e.target.value)}
                           className="form-control"
                           placeholder="B.Tech, M.Tech"
                         />
@@ -89,15 +157,60 @@ export default function Home() {
                         </label>
                         <textarea
                           id="message"
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           className="form-control"
                           placeholder="Type here..."
                           style={{ height: "150px" }}
                         ></textarea>
                       </div>
 
+                      {/* File Upload */}
+                      <div className="col-12 mb-3">
+                        <label htmlFor="resume" className="form-label">
+                          Resume
+                        </label>
+                        <div className="d-flex align-items-center">
+                          <label
+                            htmlFor="file-upload"
+                            className="btn btn-primary me-3 px-3"
+                          >
+                            Upload a file
+                          </label>
+                          <input
+                            id="file-upload"
+                            name="resume"
+                            type="file"
+                            className="d-none"
+                            accept=".pdf"
+                            onChange={handleupload}
+                          />
+                        </div>
+                      </div>
+
+                      
+                      {/* <div className="col-12 mt-5 text-center">
+                        <label
+                          htmlFor="resume"
+                          className="form-label col-12 mt-5 text-center"
+                        >
+                          Resume
+                        </label>
+                        <input
+                          accept=".pdf"
+                          type="file"
+                          name="resume"
+                          onChange={handleupload}
+                        />
+                      </div> */}
+
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
-                        <button type="submit" className="btn btn-primary">
+                        <button
+                          onClick={sendMessage}
+                          type="submit"
+                          className="btn btn-primary"
+                        >
                           SEND MESSAGE
                         </button>
                       </div>
@@ -161,8 +274,8 @@ export default function Home() {
                 </div>
               </div>
               {/*News One Single End*/}
-             
-              {/*News One Single Start*
+
+        {/*News One Single Start*
               <div
                 className="col-xl-4 col-lg-4 wow fadeInUp"
                 data-wow-delay="500ms"
@@ -209,7 +322,7 @@ export default function Home() {
                 </div>
               </div>
               {/*News One Single End*/}
-              {/*News One Single Start
+        {/*News One Single Start
               <div
                 className="col-xl-4 col-lg-4 wow fadeInRight"
                 data-wow-delay="600ms"
@@ -261,7 +374,6 @@ export default function Home() {
         </section>
         */}
         {/*News One End*/}
-        
       </Layout>
     </>
   );

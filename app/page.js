@@ -1,6 +1,5 @@
 
 import Layout from "@/components/layout/Layout"
-
 import About from "@/components/sections/home4/About"
 import Banner from "@/components/sections/home4/Banner"
 import Blog from "@/components/sections/home4/Blog"

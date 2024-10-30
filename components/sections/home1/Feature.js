@@ -87,7 +87,7 @@ export default function Feature() {
             </div>
 
             {/* Service Item 2 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 ">
               <div className="services-page__single">
                 <h3 className="services-page__title">
                   <Link href="">EXPERTISE</Link>
