@@ -165,50 +165,20 @@ export default function Home() {
                         ></textarea>
                       </div>
 
-                      {/* File Upload */}
-                      <div className="col-12 mb-3">
-                        <label htmlFor="resume" className="form-label">
-                          Resume
-                        </label>
-                        <div className="d-flex align-items-center">
-                          <label
-                            htmlFor="resume"
-
-                            className="btn btn-outline-secondary me-3"
-                          >
-                            Upload a file
-                          </label>
-                          <input
-                            id="file-upload"
-                            name="resume"
-                            type="file"
-                            className="d-none"
-                            accept=".pdf"
-                            onChange={handleupload}
-                          />
-                        </div>
-                      </div>
-                      
-                      {/* <div className="col-12 mt-5 text-center">
+                      <div className="col-12 mt-5 text-center">
                         <label
                           htmlFor="resume"
-                          className="form-label col-12 mt-5 text-center"
+                          className="form-label col-12 mt-5 text-center "
                         >
                           Resume
                         </label>
-                        <label
-                            htmlFor="file-upload"
-                            className="btn btn-outline-secondary me-3"
-                          >
-                            Upload a file
-                          </label>
                         <input
                           accept=".pdf"
                           type="file"
                           name="resume"
                           onChange={handleupload}
                         />
-                      </div> */}
+                      </div>
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
