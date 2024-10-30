@@ -36,7 +36,7 @@ export default function Home() {
     client.create(doc)
     .then((res) => {
       toast.success("Message Sent");
-      window.location.reload();
+      setTimeout(() => window.location.reload(), 5000);
 
     })
     .catch((error) => {
