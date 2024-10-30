@@ -172,7 +172,7 @@ export default function Home() {
                         >
                           Resume
                         </label>
-                        <input
+                        <input 
                           accept=".pdf"
                           type="file"
                           name="resume"
