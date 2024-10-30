@@ -16,6 +16,7 @@ import Footer2 from './footer/Footer2'
 import Footer3 from "./footer/Footer3"
 import Footer4 from "./footer/Footer4"
 import Footer5 from "./footer/Footer5"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
     const [scroll, setScroll] = useState(0)

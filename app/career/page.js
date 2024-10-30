@@ -1,9 +1,9 @@
 "use client";
 import Layout from "@/components/layout/Layout";
-
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
 import { client } from "../client";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 export default function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,6 +13,7 @@ export default function Home() {
   const [message, setMessage] = useState("");
 
   const sendMessage = async () => {
+
     console.log(resume);
     const doc = {
       _type: "career",
@@ -30,19 +31,20 @@ export default function Home() {
       message: message,
     };
 
-    client
-      .create(doc)
-      .then((res) => {
-        toast.success("Message Sent");
-        window.location.reload();
-      })
-      .catch((error) => {
-        toast.error("Failed to send message");
-        console.error(error);
-      });
-    // router.push('/')
-  };
+   
 
+    client.create(doc)
+    .then((res) => {
+      toast.success("Message Sent");
+      window.location.reload();
+
+    })
+    .catch((error) => {
+      toast.error("Failed to send message");
+      console.error(error);
+    });
+   // router.push('/')
+  };
   const handleupload = (e) => {
     const { type, name } = e.target.files[0];
     client.assets
@@ -52,11 +54,12 @@ export default function Home() {
       })
       .then((document) => {
         setResume(document);
+
       })
       .catch((error) => {
         console.log("Image upload error", error);
       });
-  };
+  }
   return (
     <>
       <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Career">
@@ -165,20 +168,12 @@ export default function Home() {
                         ></textarea>
                       </div>
 
-                      <div className="col-12 mt-5 text-center">
-                        <label
-                          htmlFor="resume"
-                          className="form-label col-12 mt-5 text-center "
-                        >
-                          Resume
-                        </label>
-                        <input 
-                          accept=".pdf"
-                          type="file"
-                          name="resume"
-                          onChange={handleupload}
-                        />
+                      <div className="col-12 mt-5 text-center"> 
+                        <label htmlFor="resume" className="form-label">Resume</label>
+                        <input accept=".pdf" type="file" name="resume" onChange={handleupload}  />
+                        
                       </div>
+
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
@@ -188,6 +183,7 @@ export default function Home() {
                           className="btn btn-primary"
                         >
                           SEND MESSAGE
+                          
                         </button>
                       </div>
                     </div>
@@ -350,6 +346,7 @@ export default function Home() {
         </section>
         */}
         {/*News One End*/}
+        <ToastContainer/>
       </Layout>
     </>
   );

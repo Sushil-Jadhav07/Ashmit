@@ -4,7 +4,9 @@ import Layout from "@/components/layout/Layout";
 import { useState } from "react";
 import { client } from "../client";
 import Link from "next/link";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 // import e from "@/documentation/assets/bundles/lightgallery.bundle";
 export default function Home() {
 
@@ -215,6 +217,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ToastContainer/>
       </Layout>
     </>
   )
