@@ -65,7 +65,7 @@ export default function Feature() {
           {/* Services items */}
           <div className="row">
             {/* Service Item 1 */}
-            <div className="col-md-4 mb-4 " style={{height:"150px !important" }}>
+            <div className="col-md-4 mb-4 ">
               <div className="services-page__single ">
                 <h3 className="services-page__title">
                   <Link href="">SERVICES</Link>
