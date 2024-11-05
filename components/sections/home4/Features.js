@@ -112,15 +112,13 @@ export default function Features() {
                             </div>
                             {/* <p className="feature-three__sub-title">Our Industries</p> */}
                             <h3 className="feature-three__title"><Link href="">ROC Compliances</Link></h3>
-                            <div className="feature-three__btn">
-                                
+                            <div className="feature-three__btn">  
                             </div>
                         </div>
                     </div>
                     {/*Feature Three Single End*/}
                 </div>
-                {/* <p className="feature-three__bottom-text">We help take your small business to the next level. Don't hesitate
-                    to <Link href="contact">contact us.</Link></p> */}
+                
             </div>
         </section>
         {/*Feature Three End*/}
