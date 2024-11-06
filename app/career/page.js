@@ -1,7 +1,7 @@
 "use client";
 import Layout from "@/components/layout/Layout";
-import 'react-toastify/dist/ReactToastify.css';
-import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { useEffect, useState } from "react";
 import { client } from "../client";
 import { toast, ToastContainer } from "react-toastify";
 export default function Home() {
@@ -12,8 +12,18 @@ export default function Home() {
   const [resume, setResume] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendMessage = async () => {
+  const [careerEntries, setCareerEntries] = useState([]);
 
+  useEffect(() => {
+    client
+      .fetch(`*[_type == "formfield"]{ job_description, experience, apply }`)
+      .then((data) => setCareerEntries(data))
+      .catch(console.error);
+  }, []);
+
+  console.log(careerEntries);
+
+  const sendMessage = async () => {
     console.log(resume);
     const doc = {
       _type: "career",
@@ -31,19 +41,17 @@ export default function Home() {
       message: message,
     };
 
-   
-
-    client.create(doc)
-    .then((res) => {
-      toast.success("Message Sent");
-      setTimeout(() => window.location.reload(), 5000);
-
-    })
-    .catch((error) => {
-      toast.error("Failed to send message");
-      console.error(error);
-    });
-   // router.push('/')
+    client
+      .create(doc)
+      .then((res) => {
+        toast.success("Message Sent");
+        setTimeout(() => window.location.reload(), 5000);
+      })
+      .catch((error) => {
+        toast.error("Failed to send message");
+        console.error(error);
+      });
+    // router.push('/')
   };
   const handleupload = (e) => {
     const { type, name } = e.target.files[0];
@@ -54,12 +62,11 @@ export default function Home() {
       })
       .then((document) => {
         setResume(document);
-
       })
       .catch((error) => {
         console.log("Image upload error", error);
       });
-  }
+  };
   return (
     <>
       <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Career">
@@ -83,7 +90,35 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-xl-12 col-lg-12">
+              <div class=" pb-5 ">
+                <h2 class="text-center mb-3">Explore Career Opportunities</h2>
+                <p class="text-center text-muted mb-4">
+                  We're looking for talent that's ready to make an impact.
+                </p>
+
+                <div class="row career-header border rounded text-center flex justify-center">
+                  <div class="col-4 flex justify-center">Position</div>
+                  <div class="col-5 flex justify-center">Experience</div>
+                  <div class="col-3 flex justify-center">Apply Now</div>
+                </div>
+
+                {careerEntries?.map((item, index) => (
+                <div key={index} class="row career-row text-center flex justify-center">
+                  <div class="col-4 flex justify-center">{item?.job_description}</div>
+                  <div class="col-5 flex justify-center">{item?.experience}</div>
+                  <div class="col-3 flex justify-center">
+                  <a href={item?.apply} target="_blank" class="apply-btn">Apply Now</a>
+                  </div>
+                </div>
+                ))}
+                
+
+                
+              </div>
+
+              
+
+              <div className="mt-5 col-xl-12 col-lg-12">
                 <div className="contact-page__left bg-white p-4 rounded shadow-sm">
                   <h3 className="contact-page__title mb-3 text-center">
                     Get in Touch
@@ -168,12 +203,17 @@ export default function Home() {
                         ></textarea>
                       </div>
 
-                      <div className="col-12 mt-5 text-center"> 
-                        <label htmlFor="resume" className="form-label">Resume</label>
-                        <input accept=".pdf" type="file" name="resume" onChange={handleupload}  />
-                        
+                      <div className="col-12 mt-5 text-center">
+                        <label htmlFor="resume" className="form-label">
+                          Resume
+                        </label>
+                        <input
+                          accept=".pdf"
+                          type="file"
+                          name="resume"
+                          onChange={handleupload}
+                        />
                       </div>
-
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
@@ -183,7 +223,6 @@ export default function Home() {
                           className="btn btn-primary"
                         >
                           SEND MESSAGE
-                          
                         </button>
                       </div>
                     </div>
@@ -346,7 +385,7 @@ export default function Home() {
         </section>
         */}
         {/*News One End*/}
-        <ToastContainer/>
+        <ToastContainer />
       </Layout>
     </>
   );
