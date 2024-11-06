@@ -103,10 +103,10 @@ export default function Home() {
                 </div>
 
                 {careerEntries?.map((item, index) => (
-                <div key={index} class="row career-row text-center flex justify-center">
+                <div key={index} class="row career-row text-center flex justify-center ">
                   <div class="col-4 flex justify-center">{item?.job_description}</div>
                   <div class="col-5 flex justify-center">{item?.experience}</div>
-                  <div class="col-3 flex justify-center">
+                  <div class="col-3 flex justify-center ">
                   <a href={item?.apply} target="_blank" class="apply-btn">Apply Now</a>
                   </div>
                 </div>

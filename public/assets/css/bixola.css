@@ -379,7 +379,7 @@ ul {
   padding: 10px;
 }
 .career-row {
-  padding: 10px;
+  padding: 15px 0px;
   border: 1px solid #dee2e6;
 }
 
@@ -387,8 +387,8 @@ ul {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 5px 15px;
-  border-radius: 10px;
+  padding: 15px 25px !important;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
@@ -404,6 +404,7 @@ ul {
 
 .apply-btn:hover {
   background-color: #0056b3;
+  color: var(--bixola-white);
 }
 
 .section-title-three__tagline-box {
