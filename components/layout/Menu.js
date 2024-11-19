@@ -48,15 +48,15 @@ export default function Menu() {
                     <ul>
                         {/* <li><Link href="services">Services</Link></li>
                         <li><Link href="services-carousel">Services Carousel</Link></li> */}
-                        <li><Link href="business-audit">Goods & Service Tax</Link></li>
+                        <li><Link href="goods-service-tax">Goods & Service Tax</Link></li>
                         <li><Link href="business-planning">CFO Services</Link></li>
                         <li><Link href="financial-advices">Corporate Services</Link></li>
                         <li><Link href="tax-strategy">Financial Services</Link></li>
                         <li><Link href="insurance-strategy">Accounting Services</Link></li>
                         <li><Link href="start-ups">Income Tax</Link></li>
-                        <li><Link href="Outsourcing">Outsourcing</Link></li>
-                        <li><Link href="TDS">TDS</Link></li>
-                        <li><Link href="start-ups">Tax Representation & Litigation</Link></li>
+                        <li><Link href="outsourcing">Outsourcing</Link></li>
+                        <li><Link href="tds">TDS</Link></li>
+                        <li><Link href="tax-representation-litigation">Tax Representation & Litigation</Link></li>
                     </ul>
                 </li>
                 <li className="dropdown">

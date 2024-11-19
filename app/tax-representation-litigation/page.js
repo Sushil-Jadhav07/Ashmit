@@ -2,7 +2,9 @@
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { useState } from "react"
+
 export default function Home() {
+
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
@@ -21,10 +23,12 @@ export default function Home() {
         }
     }
     const [isOpen, setOpen] = useState(false)
+
     return (
         <>
-        <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Business Planning">
-        {/*Services Details Start*/}
+        <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Goods & Service Tax">
+                
+        
         <section className="services-details">
             <div className="container">
                 <div className="row">
@@ -32,28 +36,41 @@ export default function Home() {
                         <div className="services-details__left">
                             <div className="services-details__services-box">
                                 <ul className="services-details__services-list list-unstyled">
+                                    <li >
+                                        <Link href="goods-service-tax">Goods & Service Tax<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
                                     <li>
-                                        <Link href="business-audit">Business Audit<span
+                                        <Link href="cfo-services">CFO Services<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="corporate-services">Corporate Services<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="financial-services">Financial Services<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="accounting-services">Accounting Services<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="income-tax">Income Tax<span 
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li >
+                                        <Link href="outsourcing">Outsourcing<span 
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="tds">TDS<span 
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li className="active">
-                                        <Link href="business-planning">Business Planning<span
+                                        <Link href="tax-representation-litigation">Tax Representation & Litigation<span 
                                                 className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="financial-advices">Financial Advices<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="tax-strategy">Tax Strategy<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="insurance-strategy">Insurance Strategy<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="start-ups">Start Ups<span className="icon-right-arrow1"></span></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -92,16 +109,34 @@ export default function Home() {
                     <div className="col-xl-9 col-lg-8">
                         <div className="services-details__right">
                             <div className="services-details__img">
-                                <img src="assets/images/services/services-details-img-3.jpg" alt=""/>
+                                <img src="assets/images/services/services-details-img-1.jpg" alt=""/>
                             </div>
-                            <h3 className="services-details__title-1">Business Planning</h3>
-                            <p className="services-details__text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
-                            <div className="services-details__img-and-feature">
+                            <h3 className="services-details__title-1">Goods & Service Tax</h3>
+                            <p className="services-details__text-1">GST implemented from July 2017 across India. We advise many companies for GST related compliances such as:</p>
+                                <ul className="services-details__points list-unstyled pt-3">
+                                <li>
+                                    <p>1.  Registration and Cancellation under GST Act</p>
+                                </li>
+                                <li>
+                                    <p>2. Consultancy for maintenance of proper records.</p>
+                                </li>
+                                <li>
+                                    <p>3. Consultancy for proper accounting for GST.</p>
+                                </li>
+                                <li>
+                                    <p>4. Consultancy on various issues relating to GST.</p>
+                                </li>
+                                <li>
+                                    <p>5. Compilation of data of Input Tax credit.</p>
+                                </li>
+                                <li>
+                                    <p>6. Preparation and filing of Returns.</p>
+                                </li>
+                                <li>
+                                    <p>7. GST Audit</p>
+                                </li>
+                            </ul>
+                            {/* <div className="services-details__img-and-feature">
                                 <div className="services-details__feature-img">
                                     <img src="assets/images/services/services-details-img-2.jpg" alt=""/>
                                     <div className="services-details__video-link">
@@ -138,35 +173,16 @@ export default function Home() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <h3 className="services-details__title-2">Benefits With Our Service:</h3>
+                            </div> */}
+                            {/* <h3 className="services-details__title-2">Benefits With Our Service:</h3>
                             <p className="services-details__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <ul className="services-details__points list-unstyled">
-                                <li>
-                                    <p>1. Save Valuable Time</p>
-                                </li>
-                                <li>
-                                    <p>2. Offer an Outsider’s Perspective</p>
-                                </li>
-                                <li>
-                                    <p>3. Fill in Gaps in Your Knowledge</p>
-                                </li>
-                                <li>
-                                    <p>4. Save Money</p>
-                                </li>
-                                <li>
-                                    <p>5. Achieve Goals</p>
-                                </li>
-                                <li>
-                                    <p>6. Offer Expertise</p>
-                                </li>
-                            </ul>
-                            <h3 className="services-details__title-3">Our Work process</h3>
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p> */}
+                            
+                            {/* <h3 className="services-details__title-3">Our Work process</h3>
                             <div className="process-four">
                                 <div className="row">
-                                    {/*Process Four Single Start*/}
+                                    
                                     <div className="col-xl-3">
                                         <div className="process-four__single">
                                             <div className="process-four__shape-1">
@@ -178,8 +194,7 @@ export default function Home() {
                                                 printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    {/*Process Four Single End*/}
-                                    {/*Process Four Single Start*/}
+                                    
                                     <div className="col-xl-3">
                                         <div className="process-four__single">
                                             <div className="process-four__shape-1">
@@ -191,8 +206,7 @@ export default function Home() {
                                                 printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    {/*Process Four Single End*/}
-                                    {/*Process Four Single Start*/}
+                                    
                                     <div className="col-xl-3">
                                         <div className="process-four__single">
                                             <div className="process-four__shape-1">
@@ -204,8 +218,7 @@ export default function Home() {
                                                 printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    {/*Process Four Single End*/}
-                                    {/*Process Four Single Start*/}
+                                    
                                     <div className="col-xl-3">
                                         <div className="process-four__single">
                                             <div className="process-four__count"></div>
@@ -214,7 +227,7 @@ export default function Home() {
                                                 printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    {/*Process Four Single End*/}
+                                    
                                 </div>
                             </div>
                             <h3 className="services-details__title-4">Frequently asked questions</h3>
@@ -297,16 +310,14 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        {/*Services Details End*/}
-
-        {/*Appointment One Start*/}
-        <section className="appointment-one">
+       
+        {/* <section className="appointment-one">
             <div className="appointment-one__inner">
                 <div className="container">
                     <div className="row">
@@ -375,8 +386,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>
-        {/*Appointment One End*/}
+        </section> */}
+        
             </Layout>
         </>
     )

@@ -2,9 +2,7 @@
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { useState } from "react"
-
 export default function Home() {
-
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
@@ -23,41 +21,52 @@ export default function Home() {
         }
     }
     const [isOpen, setOpen] = useState(false)
-
     return (
         <>
-        <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Business Audit">
-                
-        
+        <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="CFO Services">
+        {/*Services Details Start*/}
         <section className="services-details">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-3 col-lg-4">
                         <div className="services-details__left">
                             <div className="services-details__services-box">
-                                <ul className="services-details__services-list list-unstyled">
+                            <ul className="services-details__services-list list-unstyled">
+                                    <li >
+                                        <Link href="goods-service-tax">Goods & Service Tax<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
                                     <li className="active">
-                                        <Link href="business-audit">Business Audit<span
+                                        <Link href="cfo-services">CFO Services<span
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="business-planning">Business Planning<span
+                                        <Link href="corporate-services">Corporate Services<span
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="financial-advices">Financial Advices<span
+                                        <Link href="financial-services">Financial Services<span
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="tax-strategy">Tax Strategy<span
+                                        <Link href="accounting-services">Accounting Services<span
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="insurance-strategy">Insurance Strategy<span
+                                        <Link href="income-tax">Income Tax<span 
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="start-ups">Start Ups<span className="icon-right-arrow1"></span></Link>
+                                        <Link href="outsourcing">Outsourcing<span 
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="tds">TDS<span 
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
+                                        <Link href="tax-representation-litigation">Tax Representation & Litigation<span 
+                                                className="icon-right-arrow1"></span></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -98,14 +107,27 @@ export default function Home() {
                             <div className="services-details__img">
                                 <img src="assets/images/services/services-details-img-1.jpg" alt=""/>
                             </div>
-                            <h3 className="services-details__title-1">Business Audit</h3>
-                            <p className="services-details__text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
-                            <div className="services-details__img-and-feature">
+                            <h3 className="services-details__title-1">CFO Services</h3>
+                            <p className="services-details__text-1">We provide various to generate a budget and financial projections to give you and your board the best financial information possible to make strategic decisions about your company's future as well as the toolset to hold your team accountable for hitting your goals. Such As:</p>
+                                <ul className="services-details__points list-unstyled pt-3">
+                                <li>
+                                    <p>1.  Control over Accounts</p>
+                                </li>
+                                <li>
+                                    <p>2. Risk Management</p>
+                                </li>
+                                <li>
+                                    <p>3.  Financial Planning and Control</p>
+                                </li>
+                                <li>
+                                    <p>4. Business Financial Health</p>
+                                </li>
+                                <li>
+                                    <p>5. Succession Planning, Mergers & Acquisition</p>
+                                </li>
+                                
+                            </ul>
+                            {/* <div className="services-details__img-and-feature">
                                 <div className="services-details__feature-img">
                                     <img src="assets/images/services/services-details-img-2.jpg" alt=""/>
                                     <div className="services-details__video-link">
@@ -142,32 +164,13 @@ export default function Home() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <h3 className="services-details__title-2">Benefits With Our Service:</h3>
+                            </div> */}
+                            {/* <h3 className="services-details__title-2">Benefits With Our Service:</h3>
                             <p className="services-details__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <ul className="services-details__points list-unstyled">
-                                <li>
-                                    <p>1. Save Valuable Time</p>
-                                </li>
-                                <li>
-                                    <p>2. Offer an Outsider’s Perspective</p>
-                                </li>
-                                <li>
-                                    <p>3. Fill in Gaps in Your Knowledge</p>
-                                </li>
-                                <li>
-                                    <p>4. Save Money</p>
-                                </li>
-                                <li>
-                                    <p>5. Achieve Goals</p>
-                                </li>
-                                <li>
-                                    <p>6. Offer Expertise</p>
-                                </li>
-                            </ul>
-                            <h3 className="services-details__title-3">Our Work process</h3>
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p> */}
+                            
+                            {/* <h3 className="services-details__title-3">Our Work process</h3>
                             <div className="process-four">
                                 <div className="row">
                                     
@@ -298,14 +301,16 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-       
-        <section className="appointment-one">
+        {/*Services Details End*/}
+
+        {/*Appointment One Start*/}
+        {/* <section className="appointment-one">
             <div className="appointment-one__inner">
                 <div className="container">
                     <div className="row">
@@ -374,8 +379,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section> */}
+        {/*Appointment One End*/}
             </Layout>
         </>
     )
