@@ -52,6 +52,7 @@ export default function Menu() {
                         <li><Link href="business-planning">CFO Services</Link></li>
                         <li><Link href="financial-advices">Corporate Services</Link></li>
                         <li><Link href="tax-strategy">Financial Services</Link></li>
+                        <li><Link href="audit-assurance">Audit & Assurance</Link></li>
                         <li><Link href="insurance-strategy">Accounting Services</Link></li>
                         <li><Link href="start-ups">Income Tax</Link></li>
                         <li><Link href="outsourcing">Outsourcing</Link></li>

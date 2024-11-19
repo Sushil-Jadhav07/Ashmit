@@ -1,146 +1,231 @@
-'use client'
-import Link from "next/link"
-import Layout from "@/components/layout/Layout"
-import { useState } from "react"
+"use client";
+import Link from "next/link";
+import Layout from "@/components/layout/Layout";
+import { useState } from "react";
 
 export default function Home() {
+  const [isActive, setIsActive] = useState({
+    status: false,
+    key: 1,
+  });
 
-    const [isActive, setIsActive] = useState({
+  const handleToggle = (key) => {
+    if (isActive.key === key) {
+      setIsActive({
         status: false,
-        key: 1,
-    })
-
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
+      });
+    } else {
+      setIsActive({
+        status: true,
+        key,
+      });
     }
-    const [isOpen, setOpen] = useState(false)
+  };
+  const [isOpen, setOpen] = useState(false);
 
-    return (
-        <>
-        <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Goods & Service Tax">
-                
-        
+  return (
+    <>
+      <Layout
+        headerStyle={4}
+        footerStyle={3}
+        breadcrumbTitle="Audit & Assurance"
+      >
         <section className="services-details">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-3 col-lg-4">
-                        <div className="services-details__left">
-                            <div className="services-details__services-box">
-                                <ul className="services-details__services-list list-unstyled">
-                                    <li className="active">
-                                        <Link href="goods-service-tax">Goods & Service Tax<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="cfo-services">CFO Services<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="corporate-services">Corporate Services<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="financial-services">Financial Services<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="audit-assurance">Audit & Assurance<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="accounting-services">Accounting Services<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="income-tax">Income Tax<span 
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="outsourcing">Outsourcing<span 
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="tds">TDS<span 
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link href="tax-representation-litigation">Tax Representation & Litigation<span 
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="services-details__contact">
-                                <h3 className="services-details__contact-title">Contact us</h3>
-                                <ul className="services-details__contact-list list-unstyled">
-                                    <li>
-                                        <div className="icon">
-                                            <span className="icon-location-1"></span>
-                                        </div>
-                                        <p>915 Hill Street, USA</p>
-                                    </li>
-                                    <li>
-                                        <div className="icon">
-                                            <span className="icon-phone"></span>
-                                        </div>
-                                        <p><Link href="tel:+13330000000">+1(333) 000-0000</Link></p>
-                                    </li>
-                                    <li>
-                                        <div className="icon">
-                                            <span className="icon-envelope"></span>
-                                        </div>
-                                        <p><Link href="mailto:example@email.com">example@email.com</Link></p>
-                                    </li>
-                                    <li>
-                                        <div className="icon">
-                                            <span className="icon-time"></span>
-                                        </div>
-                                        <p>Mon - Sat: 9:00 AM - 5:00 PM
-                                            <br/> Sunday Close</p>
-                                    </li>
-                                </ul>
-                            </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-3 col-lg-4">
+                <div className="services-details__left">
+                  <div className="services-details__services-box">
+                    <ul className="services-details__services-list list-unstyled">
+                      <li className="active">
+                        <Link href="goods-service-tax">
+                          Goods & Service Tax
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="cfo-services">
+                          CFO Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="corporate-services">
+                          Corporate Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="financial-services">
+                          Financial Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="accounting-services">
+                          Accounting Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="income-tax">
+                          Income Tax<span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="outsourcing">
+                          Outsourcing<span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="tds">
+                          TDS<span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="tax-representation-litigation">
+                          Tax Representation & Litigation
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="services-details__contact">
+                    <h3 className="services-details__contact-title">
+                      Contact us
+                    </h3>
+                    <ul className="services-details__contact-list list-unstyled">
+                      <li>
+                        <div className="icon">
+                          <span className="icon-location-1"></span>
                         </div>
-                    </div>
-                    <div className="col-xl-9 col-lg-8">
-                        <div className="services-details__right">
-                            <div className="services-details__img">
-                                <img src="assets/images/services/Goods_Service_Tax.png" alt=""/>
-                            </div>
-                            <h3 className="services-details__title-1">Goods & Service Tax</h3>
-                            <p className="services-details__text-1">GST implemented from July 2017 across India. We advise many companies for GST related compliances such as:</p>
-                                <ul className="services-details__points list-unstyled pt-3">
-                                <li>
-                                    <p>1.  Registration and Cancellation under GST Act</p>
-                                </li>
-                                <li>
-                                    <p>2. Consultancy for maintenance of proper records.</p>
-                                </li>
-                                <li>
-                                    <p>3. Consultancy for proper accounting for GST.</p>
-                                </li>
-                                <li>
-                                    <p>4. Consultancy on various issues relating to GST.</p>
-                                </li>
-                                <li>
-                                    <p>5. Compilation of data of Input Tax credit.</p>
-                                </li>
-                                <li>
-                                    <p>6. Preparation and filing of Returns.</p>
-                                </li>
-                                <li>
-                                    <p>7. GST Audit</p>
-                                </li>
-                            </ul>
-                            {/* <div className="services-details__img-and-feature">
+                        <p>915 Hill Street, USA</p>
+                      </li>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-phone"></span>
+                        </div>
+                        <p>
+                          <Link href="tel:+13330000000">+1(333) 000-0000</Link>
+                        </p>
+                      </li>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-envelope"></span>
+                        </div>
+                        <p>
+                          <Link href="mailto:example@email.com">
+                            example@email.com
+                          </Link>
+                        </p>
+                      </li>
+                      <li>
+                        <div className="icon">
+                          <span className="icon-time"></span>
+                        </div>
+                        <p>
+                          Mon - Sat: 9:00 AM - 5:00 PM
+                          <br /> Sunday Close
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-9 col-lg-8">
+                <div className="services-details__right">
+                  <div className="services-details__img">
+                    <img
+                      src="assets/images/services/Goods_Service_Tax.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 className="services-details__title-1">
+                    Audit & Assurance
+                  </h3>
+                  <p className="services-details__text-1">
+                    We provide various Auditing & Assurance Services to
+                    Companies and Firms and Trusts. Audit includes through
+                    verification of evidences, vouchers & certifications. We
+                    also provide following services:
+                  </p>
+
+                  <h3 className="services-details__text-1 pt-5">
+                  Broadly, Audit involves the following :
+                  </h3>
+                  <ul className="services-details__points list-unstyled pt-3">
+                    <li>
+                      <p>1. Indepth study of existing systems, procedures and controls for proper understanding. Suggestions for improvement and strengthening.</p>
+                    </li>
+                    <li>
+                      <p>2. Ensuring compliance with policies, procedures and statutes.</p>
+                    </li>
+                    <li>
+                      <p>3. Comprehensive review to ensure that the accounts are prepared in accordance with Generally Accepted Accounting Policies and applicable Accounting Standards/IFRS.</p>
+                    </li>
+                    <li>
+                      <p>4. Checking the genuineness of the expenses booked in accounts.</p>
+                    </li>
+                    <li>
+                      <p>5. Reporting inefficiencies at any operational level.</p>
+                    </li>
+                    <li>
+                      <p>6. Detection and prevention of leakages of income and suggesting corrective measures to prevent recurrence.</p>
+                    </li>
+                    <li>
+                      <p>7. Certification of the books of account being in agreement with the Balance Sheet and Profit and Loss Account.</p>
+                    </li>
+                    <li>
+                      <p>8. Issue of Audit Reports under various laws</p>
+                    </li>
+                  </ul>
+
+                  <h3 className="services-details__text-1 pt-5">
+                  Types of Audits conducted:
+                  </h3>
+                  <ul className="services-details__points list-unstyled pt-3">
+                    <li>
+                      <p>1. Statutory Audit of Companies.</p>
+                    </li>
+                    <li>
+                      <p>2. Tax Audit under Section 44AB of the Income Tax Act, 1961.</p>
+                    </li>
+                    <li>
+                      <p>3. GST Audit under GST Act</p>
+                    </li>
+                    <li>
+                      <p>4. VAT Audit under MVAT Act</p>
+                    </li>
+                    <li>
+                      <p>5. Audit of Charitable Trusts, Schools etc.</p>
+                    </li>
+                    <li>
+                      <p>6. Audit of Co-operative Societies
+                      </p>
+                    </li>
+                    <li>
+                      <p>7. Audit of Hospitals</p>
+                    </li>
+                    <li>
+                      <p>8. Audit of Tourism & Hospitality Industries</p>
+                    </li>
+                    <li>
+                      <p>9. Internal Audits.</p>
+                    </li>
+                    <li>
+                      <p>10. Statutory Audits of Banks.</p>
+                    </li>
+                    <li>
+                      <p>11. Investigation and Due Diligence</p>
+                    </li>
+                  </ul>
+                  {/* <div className="services-details__img-and-feature">
                                 <div className="services-details__feature-img">
                                     <img src="assets/images/services/services-details-img-2.jpg" alt=""/>
                                     <div className="services-details__video-link">
@@ -178,12 +263,12 @@ export default function Home() {
                                     </ul>
                                 </div>
                             </div> */}
-                            {/* <h3 className="services-details__title-2">Benefits With Our Service:</h3>
+                  {/* <h3 className="services-details__title-2">Benefits With Our Service:</h3>
                             <p className="services-details__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p> */}
-                            
-                            {/* <h3 className="services-details__title-3">Our Work process</h3>
+
+                  {/* <h3 className="services-details__title-3">Our Work process</h3>
                             <div className="process-four">
                                 <div className="row">
                                     
@@ -315,12 +400,12 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div> */}
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
+          </div>
         </section>
-       
+
         {/* <section className="appointment-one">
             <div className="appointment-one__inner">
                 <div className="container">
@@ -391,8 +476,7 @@ export default function Home() {
                 </div>
             </div>
         </section> */}
-        
-            </Layout>
-        </>
-    )
+      </Layout>
+    </>
+  );
 }

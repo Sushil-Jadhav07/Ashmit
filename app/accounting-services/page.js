@@ -60,7 +60,13 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li  className="active">
+                      <li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li className="active">
                         <Link href="accounting-services">
                           Accounting Services
                           <span className="icon-right-arrow1"></span>
@@ -135,19 +141,22 @@ export default function Home() {
                 <div className="services-details__right">
                   <div className="services-details__img">
                     <img
-                      src="assets/images/services/services-details-img-5.jpg"
+                      src="assets/images/services/Accounting_services.png"
                       alt=""
                     />
                   </div>
                   <h3 className="services-details__title-1">
-                  Book Keeping & Accounting Services
+                    Book Keeping & Accounting Services
                   </h3>
                   <p className="services-details__text-1">
-                  We provide accounting outsourcing services for Tally and Quick Books as well:
+                    We provide accounting outsourcing services for Tally and
+                    Quick Books as well:
                   </p>
                   <ul className="services-details__points list-unstyled">
                     <li>
-                      <p>1. Design, Implementation and Review of Accounting System
+                      <p>
+                        1. Design, Implementation and Review of Accounting
+                        System
                       </p>
                     </li>
                     <li>
@@ -157,7 +166,9 @@ export default function Home() {
                       <p>3. Complete outsourcing of Accounting Services</p>
                     </li>
                     <li>
-                      <p>4. Customizing Accounting Software to Business Needs</p>
+                      <p>
+                        4. Customizing Accounting Software to Business Needs
+                      </p>
                     </li>
                     <li>
                       <p>5. Tally consultancy</p>

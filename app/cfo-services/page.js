@@ -49,6 +49,10 @@ export default function Home() {
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
+                                        <Link href="audit-assurance">Audit & Assurance<span
+                                                className="icon-right-arrow1"></span></Link>
+                                    </li>
+                                    <li>
                                         <Link href="accounting-services">Accounting Services<span
                                                 className="icon-right-arrow1"></span></Link>
                                     </li>
@@ -105,7 +109,7 @@ export default function Home() {
                     <div className="col-xl-9 col-lg-8">
                         <div className="services-details__right">
                             <div className="services-details__img">
-                                <img src="assets/images/services/services-details-img-1.jpg" alt=""/>
+                                <img src="assets/images/services/CFO_Services.png" alt=""/>
                             </div>
                             <h3 className="services-details__title-1">CFO Services</h3>
                             <p className="services-details__text-1">We provide various to generate a budget and financial projections to give you and your board the best financial information possible to make strategic decisions about your company's future as well as the toolset to hold your team accountable for hitting your goals. Such As:</p>

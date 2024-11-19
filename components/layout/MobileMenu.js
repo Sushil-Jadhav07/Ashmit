@@ -113,6 +113,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                       <Link href="tax-strategy">Financial Services</Link>
                     </li>
                     <li>
+                      <Link href="audit-assurance">Audit & Assurance</Link>
+                    </li>
+                    <li>
                       <Link href="insurance-strategy">Accounting Services</Link>
                     </li>
                     <li>

@@ -24,7 +24,11 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Financial Services">
+      <Layout
+        headerStyle={4}
+        footerStyle={4}
+        breadcrumbTitle="Financial Services"
+      >
         {/*Services Details Start*/}
         <section className="services-details">
           <div className="container">
@@ -45,7 +49,7 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li >
+                      <li>
                         <Link href="corporate-services">
                           Corporate Services
                           <span className="icon-right-arrow1"></span>
@@ -54,6 +58,12 @@ export default function Home() {
                       <li className="active">
                         <Link href="financial-services">
                           Financial Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
@@ -132,13 +142,18 @@ export default function Home() {
                 <div className="services-details__right">
                   <div className="services-details__img">
                     <img
-                      src="assets/images/services/services-details-img-7.jpg"
+                      src="assets/images/services/Financial_services.png"
                       alt=""
                     />
                   </div>
-                  <h3 className="services-details__title-1">Project Finance & Funds Sourcing Services</h3>
+                  <h3 className="services-details__title-1">
+                    Project Finance & Funds Sourcing Services
+                  </h3>
                   <p className="services-details__text-1">
-                  Financial Management constitutes an important aspect of the business. We offer the following services & assists businesses in proper allocation and utilisation of its finance.
+                    Financial Management constitutes an important aspect of the
+                    business. We offer the following services & assists
+                    businesses in proper allocation and utilisation of its
+                    finance.
                   </p>
                   <ul className="services-details__points list-unstyled">
                     <li>
@@ -223,8 +238,6 @@ export default function Home() {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip.
                   </p> */}
-                  
-                  
                 </div>
               </div>
             </div>

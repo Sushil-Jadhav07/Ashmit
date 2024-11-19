@@ -63,6 +63,12 @@ export default function Home() {
                         </Link>
                       </li>
                       <li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
                         <Link href="accounting-services">
                           Accounting Services
                           <span className="icon-right-arrow1"></span>
@@ -137,15 +143,19 @@ export default function Home() {
                 <div className="services-details__right">
                   <div className="services-details__img">
                     <img
-                      src="assets/images/services/services-details-img-4.jpg"
+                      src="assets/images/services/Corporate_Services.png"
                       alt=""
                     />
                   </div>
                   <h3 className="services-details__title-1">
-                  Company Law Services & Compliances
+                    Company Law Services & Compliances
                   </h3>
                   <p className="services-details__text-1">
-                  Indian companies are governed by Companies Act 2013 and every Company has to comply with various statutory provisions as per different sections of Companies Act 2013. We provide complete services for Company Law Compliances such as:
+                    Indian companies are governed by Companies Act 2013 and
+                    every Company has to comply with various statutory
+                    provisions as per different sections of Companies Act 2013.
+                    We provide complete services for Company Law Compliances
+                    such as:
                   </p>
                   <ul className="services-details__points list-unstyled">
                     <li>
@@ -155,7 +165,10 @@ export default function Home() {
                       <p>2. Consultancy on Company Law Matters.</p>
                     </li>
                     <li>
-                      <p>3. Filing of annual returns and various forms, documents.</p>
+                      <p>
+                        3. Filing of annual returns and various forms,
+                        documents.
+                      </p>
                     </li>
                     <li>
                       <p>4. Secretarial Matters including Share Transfers.</p>
@@ -230,12 +243,11 @@ export default function Home() {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip.
                   </p> */}
-                  
+
                   {/* <h3 className="services-details__title-3">
                     Our Work process
                   </h3> */}
-                  
-                  
+
                   {/* <div className="services-details__faq">
                     <div
                       className="accrodion-grp services-details-accrodion"

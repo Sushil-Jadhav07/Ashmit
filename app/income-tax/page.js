@@ -56,7 +56,13 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li >
+                      <li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
                         <Link href="accounting-services">
                           Accounting Services
                           <span className="icon-right-arrow1"></span>
@@ -130,39 +136,54 @@ export default function Home() {
               <div className="col-xl-9 col-lg-8">
                 <div className="services-details__right">
                   <div className="services-details__img">
-                    <img
-                      src="assets/images/services/services-details-img-6.jpg"
-                      alt=""
-                    />
+                    <img src="assets/images/services/Income_Tax.png" alt="" />
                   </div>
                   <h3 className="services-details__title-1">Income Tax</h3>
                   <p className="services-details__text-1">
-                  Income tax consultancy with effective tax strategies, form an integral part of our advisory. We provide income tax advice to companies as well as non-companies clients. We provide income tax advice in following areas:
+                    Income tax consultancy with effective tax strategies, form
+                    an integral part of our advisory. We provide income tax
+                    advice to companies as well as non-companies clients. We
+                    provide income tax advice in following areas:
                   </p>
                   <ul className="services-details__points list-unstyled">
                     <li>
                       <p>1. PAN / TAN Application</p>
                     </li>
                     <li>
-                      <p>2. Consultancy on various intricate matters pertaining to Income tax.</p>
+                      <p>
+                        2. Consultancy on various intricate matters pertaining
+                        to Income tax.
+                      </p>
                     </li>
                     <li>
-                      <p>3. Effective tax management, tax structuring and advisory services.</p>
+                      <p>
+                        3. Effective tax management, tax structuring and
+                        advisory services.
+                      </p>
                     </li>
                     <li>
                       <p>4. Tax Planning for Corporates and others.</p>
                     </li>
                     <li>
-                      <p>5. Designing / restructuring salary structure to minimize tax burden.</p>
+                      <p>
+                        5. Designing / restructuring salary structure to
+                        minimize tax burden.
+                      </p>
                     </li>
                     <li>
                       <p>6. Advance tax estimation and deposit.</p>
                     </li>
                     <li>
-                      <p>7. Providing regular updates on amendments, circulars, notifications & judgments.</p>
+                      <p>
+                        7. Providing regular updates on amendments, circulars,
+                        notifications & judgments.
+                      </p>
                     </li>
                     <li>
-                      <p>8. Filing Income Tax and Wealth Tax returns for all kinds of assesses.</p>
+                      <p>
+                        8. Filing Income Tax and Wealth Tax returns for all
+                        kinds of assesses.
+                      </p>
                     </li>
                     <li>
                       <p>9. Conducting Tax Audit</p>
@@ -231,7 +252,7 @@ export default function Home() {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip.
                   </p> */}
-                  
+
                   {/* <h3 className="services-details__title-3">
                     Our Work process
                   </h3>
