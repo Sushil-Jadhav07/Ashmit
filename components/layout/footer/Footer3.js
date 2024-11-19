@@ -33,8 +33,7 @@ export default function Footer3() {
                   <div className="content">
                     <h3>Address: </h3>
                     <p>
-                      Office No. 40, 1st Floor, Asiatic Arcade,<br/> 
-                      Pokhran Rd. 1,Vartak Nagar, Thane West, Maharashtra 400606
+                    Office no 40, 1st floor, Asiatic Arcade, <br/> Vartak Nagar, Thane (W) 400606
                     </p>
                   </div>
                 </div>
@@ -47,7 +46,7 @@ export default function Footer3() {
                   <div className="content">
                     <h3>Get a quote</h3>
                     <p>
-                      <a href="tel:+919762411205">+ 9 1 9 7 6 2 4 1 1 2 0 5</a>
+                      <a href="tel:9762411205">9987703715</a>
                     </p>
                     
                   </div>
@@ -92,7 +91,7 @@ export default function Footer3() {
                     printing and typesetting industry.
                   </p>
                   <div className="footer-widget-three__email" style={{textAlign:"center" , justifyContent:  "center"}} >
-                    <a href="mailto:info@example.com">
+                    <a href="mailto:info@ashmitassociates.com">
                       <span className="icon-gmail"></span>
                       info@ashmitassociates.com
                     </a>

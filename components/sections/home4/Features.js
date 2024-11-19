@@ -10,7 +10,7 @@ export default function Features() {
             <div className="container">
                 <div className="section-title-three text-center pb-5">
                     <div className="section-title-three__tagline-box">
-                        <p className="section-title-three__tagline">Gamut of Services</p>
+                        <p className="section-title-three__tagline">Services</p>
                     </div>
                     {/* <h2 className="section-title-three__title">Grow Your Brand By Zeroing In On<br/> Your Target Market</h2> */}
                 </div>
