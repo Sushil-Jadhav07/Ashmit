@@ -62,9 +62,11 @@ export default function Home() {
                         </Link>
                       </li>
                       <li>
-                                        <Link href="audit-assurance">Audit & Assurance<span
-                                                className="icon-right-arrow1"></span></Link>
-                                    </li>
+                        <Link href="audit-assurance">
+                          Audit & Assurance
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
                       <li>
                         <Link href="accounting-services">
                           Accounting Services
@@ -86,6 +88,18 @@ export default function Home() {
                           TDS<span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
+                      <li>
+                        <Link href="services-non-resident">
+                          Services for Non-resident
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li >
+                        <Link href="other-services">
+                          Other Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
                       <li className="active">
                         <Link href="tax-representation-litigation">
                           Tax Representation & Litigation
@@ -103,14 +117,17 @@ export default function Home() {
                         <div className="icon">
                           <span className="icon-location-1"></span>
                         </div>
-                        <p>915 Hill Street, USA</p>
+                        <p>
+                          Office no 40, 1st floor, Asiatic Arcade, <br />
+                          Vartak Nagar, Thane (W) 400606
+                        </p>
                       </li>
                       <li>
                         <div className="icon">
                           <span className="icon-phone"></span>
                         </div>
                         <p>
-                          <Link href="tel:+13330000000">+1(333) 000-0000</Link>
+                          <Link href="tel:9987703715">9987703715</Link>
                         </p>
                       </li>
                       <li>
@@ -118,8 +135,8 @@ export default function Home() {
                           <span className="icon-envelope"></span>
                         </div>
                         <p>
-                          <Link href="mailto:example@email.com">
-                            example@email.com
+                          <Link href="mailto:info@ashmitassociates.com">
+                            info@ashmitassociates.com
                           </Link>
                         </p>
                       </li>
@@ -155,21 +172,31 @@ export default function Home() {
                   </p>
                   <ul className="services-details__points list-unstyled pt-3">
                     <li>
-                      <p>1. Attending Income Tax Regular / Scrutiny Assessments</p>
+                      <p>
+                        1. Attending Income Tax Regular / Scrutiny Assessments
+                      </p>
                     </li>
                     <li>
-                      <p>2. Liaison with Income tax department for rectification, assessment, obtaining refunds etc.</p>
+                      <p>
+                        2. Liaison with Income tax department for rectification,
+                        assessment, obtaining refunds etc.
+                      </p>
                     </li>
                     <li>
-                      <p>3. Filing and pleading appeals under various provisions of IT Act.</p>
+                      <p>
+                        3. Filing and pleading appeals under various provisions
+                        of IT Act.
+                      </p>
                     </li>
                     <li>
                       <p>4. Attending GST Regular / Scrutiny Assessments</p>
                     </li>
                     <li>
-                      <p>5. Liaison with GST department for rectification, assessment, obtaining refunds etc</p>
+                      <p>
+                        5. Liaison with GST department for rectification,
+                        assessment, obtaining refunds etc
+                      </p>
                     </li>
-                    
                   </ul>
                   {/* <div className="services-details__img-and-feature">
                                 <div className="services-details__feature-img">

@@ -89,6 +89,18 @@ export default function Home() {
                         </Link>
                       </li>
                       <li>
+                        <Link href="services-non-resident">
+                          Services for Non-resident
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li >
+                        <Link href="other-services">
+                          Other Services
+                          <span className="icon-right-arrow1"></span>
+                        </Link>
+                      </li>
+                      <li>
                         <Link href="tax-representation-litigation">
                           Tax Representation & Litigation
                           <span className="icon-right-arrow1"></span>
@@ -105,14 +117,17 @@ export default function Home() {
                         <div className="icon">
                           <span className="icon-location-1"></span>
                         </div>
-                        <p>915 Hill Street, USA</p>
+                        <p>
+                          Office no 40, 1st floor, Asiatic Arcade, <br />
+                          Vartak Nagar, Thane (W) 400606
+                        </p>
                       </li>
                       <li>
                         <div className="icon">
                           <span className="icon-phone"></span>
                         </div>
                         <p>
-                          <Link href="tel:+13330000000">+1(333) 000-0000</Link>
+                          <Link href="tel:9987703715">9987703715</Link>
                         </p>
                       </li>
                       <li>
@@ -120,8 +135,8 @@ export default function Home() {
                           <span className="icon-envelope"></span>
                         </div>
                         <p>
-                          <Link href="mailto:example@email.com">
-                            example@email.com
+                          <Link href="mailto:info@ashmitassociates.com">
+                            info@ashmitassociates.com
                           </Link>
                         </p>
                       </li>

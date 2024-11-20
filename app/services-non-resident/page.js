@@ -28,7 +28,7 @@ export default function Home() {
       <Layout
         headerStyle={4}
         footerStyle={3}
-        breadcrumbTitle="Audit & Assurance"
+        breadcrumbTitle="Services for Non-resident"
       >
         <section className="services-details">
           <div className="container">
@@ -61,7 +61,7 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li className="active">
+                      <li>
                         <Link href="audit-assurance">
                           Audit & Assurance
                           <span className="icon-right-arrow1"></span>
@@ -88,13 +88,13 @@ export default function Home() {
                           TDS<span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li>
+                      <li className="active">
                         <Link href="services-non-resident">
                           Services for Non-resident
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li >
+                      <li>
                         <Link href="other-services">
                           Other Services
                           <span className="icon-right-arrow1"></span>
@@ -157,72 +157,33 @@ export default function Home() {
                 <div className="services-details__right">
                   <div className="services-details__img">
                     <img
-                      src="assets/images/services/Audit_Assurance.png"
+                      src="assets/images/services/Nri.png"
                       alt=""
                     />
                   </div>
                   <h3 className="services-details__title-1">
-                    Audit & Assurance
+                    Services for Non-resident
                   </h3>
                   <p className="services-details__text-1">
-                    We provide various Auditing & Assurance Services to
-                    Companies and Firms. Audit includes through verification of
-                    evidences, vouchers & certifications. We also provide
-                    following services:
+                    Non Resident Indians have special needs as regards their
+                    remittances, double taxation reliefs / issues, Indian
+                    Investment income concerns.
                   </p>
-
-                  <h3 className="services-details__text-1 pt-5">
-                    Broadly, Audit involves the following :
-                  </h3>
                   <ul className="services-details__points list-unstyled pt-3">
                     <li>
-                      <p>1. In-depth study of existing systems, procedures and controls for proper understanding. Suggestions for improvement and strengthening.</p>
+                      <p>1. FEMA Consultancy (Inflow and Outflow of Funds)</p>
                     </li>
                     <li>
-                      <p>2. Ensuring compliance with policies, procedures and statutes.</p>
+                      <p>2. Lower TDS Certificate (LTC)</p>
                     </li>
                     <li>
-                      <p>3. Comprehensive review to ensure that the accounts are prepared in accordance with Generally Accepted Accounting Policies and applicable Accounting Standards/IFRS.</p>
+                      <p>3. 15CA/ 15CB filing.</p>
                     </li>
                     <li>
-                      <p>
-                        4. Checking the genuineness of the expenses booked in accounts.
-                      </p>
+                      <p>4. Company formation with NRI Director</p>
                     </li>
                     <li>
-                      <p>
-                        5. Reporting inefficiencies at any operational level.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        6. Detection and prevention of leakages of income and suggesting corrective measures to prevent recurrence.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        7. Certification of the books of account being in agreement with the Balance Sheet and Profit and Loss Account.
-                      </p>
-                    </li>
-                    <li>
-                      <p>8. Issue of Audit Reports under various laws</p>
-                    </li>
-                  </ul>
-
-                  <h3 className="services-details__text-1 pt-5">
-                    Types of Audits conducted:
-                  </h3>
-                  <ul className="services-details__points list-unstyled pt-3">
-                    <li>
-                      <p>1. Statutory Audit of Companies.</p>
-                    </li>
-                    <li>
-                      <p>
-                        2. Tax Audit under Section 44AB of the Income Tax Act, 1961.
-                      </p>
-                    </li>
-                    <li>
-                      <p>3. GST Audit under GST Act</p>
+                      <p>5. Investment Advisory for Indian Investment</p>
                     </li>
                     
                   </ul>

@@ -25,11 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout
-        headerStyle={4}
-        footerStyle={3}
-        breadcrumbTitle="Audit & Assurance"
-      >
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Other Services ">
         <section className="services-details">
           <div className="container">
             <div className="row">
@@ -61,7 +57,7 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li className="active">
+                      <li>
                         <Link href="audit-assurance">
                           Audit & Assurance
                           <span className="icon-right-arrow1"></span>
@@ -94,7 +90,7 @@ export default function Home() {
                           <span className="icon-right-arrow1"></span>
                         </Link>
                       </li>
-                      <li >
+                      <li className="active">
                         <Link href="other-services">
                           Other Services
                           <span className="icon-right-arrow1"></span>
@@ -157,74 +153,44 @@ export default function Home() {
                 <div className="services-details__right">
                   <div className="services-details__img">
                     <img
-                      src="assets/images/services/Audit_Assurance.png"
+                      src="assets/images/services/Other_Services.png"
                       alt=""
                     />
                   </div>
-                  <h3 className="services-details__title-1">
-                    Audit & Assurance
-                  </h3>
+                  <h3 className="services-details__title-1">Other Services</h3>
                   <p className="services-details__text-1">
-                    We provide various Auditing & Assurance Services to
-                    Companies and Firms. Audit includes through verification of
-                    evidences, vouchers & certifications. We also provide
-                    following services:
+                    We advise of right model of business and legal structure of
+                    the business entity. We assist to incorporate Private
+                    Limited, Public Limited, Limited Liability Partnerships
+                    (LLP), One Person Companies, Partnership firms in India and
+                    provide the complete solution for incorporation in India. We
+                    also assist to incorporate other formats such as
                   </p>
-
-                  <h3 className="services-details__text-1 pt-5">
-                    Broadly, Audit involves the following :
-                  </h3>
                   <ul className="services-details__points list-unstyled pt-3">
                     <li>
-                      <p>1. In-depth study of existing systems, procedures and controls for proper understanding. Suggestions for improvement and strengthening.</p>
+                      <p>1. Partnership Firm formation</p>
                     </li>
                     <li>
-                      <p>2. Ensuring compliance with policies, procedures and statutes.</p>
+                      <p>2. Limited Liability Partnership (LLP) formation and its compliance</p>
                     </li>
                     <li>
-                      <p>3. Comprehensive review to ensure that the accounts are prepared in accordance with Generally Accepted Accounting Policies and applicable Accounting Standards/IFRS.</p>
+                      <p>3. Profession Tax compliance</p>
                     </li>
-                    <li>
-                      <p>
-                        4. Checking the genuineness of the expenses booked in accounts.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        5. Reporting inefficiencies at any operational level.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        6. Detection and prevention of leakages of income and suggesting corrective measures to prevent recurrence.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        7. Certification of the books of account being in agreement with the Balance Sheet and Profit and Loss Account.
-                      </p>
-                    </li>
-                    <li>
-                      <p>8. Issue of Audit Reports under various laws</p>
-                    </li>
+
                   </ul>
 
-                  <h3 className="services-details__text-1 pt-5">
-                    Types of Audits conducted:
-                  </h3>
-                  <ul className="services-details__points list-unstyled pt-3">
+                  <h3 className="services-details__title-1">Personal Consultancy:</h3>
+                  <ul className="services-details__points list-unstyled">
                     <li>
-                      <p>1. Statutory Audit of Companies.</p>
+                      <p>1. Tax Planning</p>
                     </li>
                     <li>
-                      <p>
-                        2. Tax Audit under Section 44AB of the Income Tax Act, 1961.
-                      </p>
+                      <p>2.	Financial Planning</p>
                     </li>
                     <li>
-                      <p>3. GST Audit under GST Act</p>
+                      <p>3.	Investment Consultancy</p>
                     </li>
-                    
+
                   </ul>
                   {/* <div className="services-details__img-and-feature">
                                 <div className="services-details__feature-img">
