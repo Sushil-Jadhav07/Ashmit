@@ -57,46 +57,18 @@ export default function Footer2() {
                     <h3 className="footer-widget-two__title">Our Services</h3>
                   </div>
                   <ul className="footer-widget-two__company-list list-unstyled">
-                    <li>
-                      <Link href="goods-service-tax">Goods & Service Tax</Link>
-                    </li>
-                    <li>
-                      <Link href="cfo-services">CFO Services</Link>
-                    </li>
-                    <li>
-                      <Link href="corporate-services">Corporate Services</Link>
-                    </li>
-                    <li>
-                      <Link href="financial-services">Financial Services</Link>
-                    </li>
-                    <li>
-                      <Link href="audit-assurance">Audit & Assurance</Link>
-                    </li>
-                    <li>
-                      <Link href="accounting-services">Accounting Services</Link>
-                    </li>
-                    <li>
-                      <Link href="income-tax">Income Tax</Link>
-                    </li>
-                    <li>
-                      <Link href="outsourcing">Outsourcing</Link>
-                    </li>
-                    <li>
-                      <Link href="tds">TDS</Link>
-                    </li>
-                    <li>
-                      <Link href="services-non-resident">
-                        Services for Non-resident
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="other-services">Other Services</Link>
-                    </li>
-                    <li>
-                      <Link href="tax-representation-litigation">
-                        Tax Representation & Litigation
-                      </Link>
-                    </li>
+                  <li><Link href="goods-service-tax">Goods & Service Tax</Link></li>
+                        <li><Link href="cfo-services">CFO Services</Link></li>
+                        <li><Link href="corporate-services">Corporate Services</Link></li>
+                        <li><Link href="financial-services">Financial Services</Link></li>
+                        <li><Link href="audit-assurance">Audit & Assurance</Link></li>
+                        <li><Link href="accounting-services">Accounting Services</Link></li>
+                        <li><Link href="income-tax">Income Tax</Link></li>
+                        <li><Link href="outsourcing">Outsourcing</Link></li>
+                        <li><Link href="tds">TDS</Link></li>
+                        <li><Link href="services-non-resident">Services for Non-resident</Link></li>
+                        <li><Link href="other-services">Other Services</Link></li>
+                        <li><Link href="tax-representation-litigation">Tax Representation & Litigation</Link></li>
                   </ul>
                 </div>
               </div>
