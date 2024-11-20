@@ -94,7 +94,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     isActive.key == 3 ? "dropdown current" : "dropdown"
                   }
                 >
-                  <Link href="#">Services</Link>
+                  <Link href="services">Services</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 3 ? "block" : "none"}`,
