@@ -8453,7 +8453,7 @@ ul {
   position: relative;
   display: block;
   background-color: var(--bixola-black);
-  margin-top: -164px;
+  /* margin-top: -164px; */
   overflow: hidden;
   z-index: 1;
 }
@@ -8484,7 +8484,7 @@ ul {
 .site-footer-two__top {
   position: relative;
   display: block;
-  padding: 276px 0 82px;
+  padding: 40px 0 20px;
   border-bottom: 1px solid rgba(var(--bixola-white-rgb), .10);
 }
 

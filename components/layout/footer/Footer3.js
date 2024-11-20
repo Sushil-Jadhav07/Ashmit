@@ -104,7 +104,7 @@ export default function Footer3() {
               >
                 <div className="footer-widget-three__column footer-widget-three__company">
                   <div className="footer-widget-three__title-box">
-                    <h3 className="footer-widget-three__title">Company</h3>
+                    <h3 className="footer-widget-three__title">Quick Links</h3>
                   </div>
                   <ul className="footer-widget-three__company-list list-unstyled">
                     <li>
@@ -123,6 +123,8 @@ export default function Footer3() {
                   </ul>
                 </div>
               </div>
+
+              
               {/* <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget-three__column footer-widget-three__post">
                                 <div className="footer-widget-three__title-box">

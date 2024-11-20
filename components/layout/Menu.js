@@ -44,7 +44,7 @@ export default function Menu() {
                     </ul>
                 </li> */}
                 <li className="dropdown">
-                    <Link href="services">Services</Link>
+                    <Link href="#">Services</Link>
                     <ul>
                         {/* <li><Link href="services">Services</Link></li>
                         <li><Link href="services-carousel">Services Carousel</Link></li> */}
@@ -57,6 +57,8 @@ export default function Menu() {
                         <li><Link href="start-ups">Income Tax</Link></li>
                         <li><Link href="outsourcing">Outsourcing</Link></li>
                         <li><Link href="tds">TDS</Link></li>
+                        <li><Link href="services-non-resident">Services for Non-resident</Link></li>
+                        <li><Link href="other-services">Other Services</Link></li>
                         <li><Link href="tax-representation-litigation">Tax Representation & Litigation</Link></li>
                     </ul>
                 </li>

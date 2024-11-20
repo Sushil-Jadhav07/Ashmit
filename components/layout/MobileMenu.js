@@ -94,7 +94,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     isActive.key == 3 ? "dropdown current" : "dropdown"
                   }
                 >
-                  <Link href="services">Services</Link>
+                  <Link href="#">Services</Link>
                   <ul
                     style={{
                       display: `${isActive.key == 3 ? "block" : "none"}`,
@@ -128,9 +128,13 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                       <Link href="TDS">TDS</Link>
                     </li>
                     <li>
-                      <Link href="start-ups">
-                        Tax Representation & Litigation
-                      </Link>
+                      <Link href="services-non-resident">Services for Non-resident</Link>
+                    </li>
+                    <li>
+                      <Link href="other-services">Other Services</Link>
+                    </li>
+                    <li>
+                      <Link href="start-ups">Tax Representation & Litigation</Link>
                     </li>
                   </ul>
                   <button
