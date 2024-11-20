@@ -61,22 +61,22 @@ export default function Footer2() {
                       <Link href="goods-service-tax">Goods & Service Tax</Link>
                     </li>
                     <li>
-                      <Link href="business-planning">CFO Services</Link>
+                      <Link href="cfo-services">CFO Services</Link>
                     </li>
                     <li>
-                      <Link href="financial-advices">Corporate Services</Link>
+                      <Link href="corporate-services">Corporate Services</Link>
                     </li>
                     <li>
-                      <Link href="tax-strategy">Financial Services</Link>
+                      <Link href="financial-services">Financial Services</Link>
                     </li>
                     <li>
                       <Link href="audit-assurance">Audit & Assurance</Link>
                     </li>
                     <li>
-                      <Link href="insurance-strategy">Accounting Services</Link>
+                      <Link href="accounting-services">Accounting Services</Link>
                     </li>
                     <li>
-                      <Link href="start-ups">Income Tax</Link>
+                      <Link href="income-tax">Income Tax</Link>
                     </li>
                     <li>
                       <Link href="outsourcing">Outsourcing</Link>
