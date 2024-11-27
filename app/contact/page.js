@@ -198,7 +198,7 @@ export default function Home() {
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
-                        <button onClick={sendMessage} type="submit" className="btn btn-primary">
+                        <button onClick={sendMessage} type="submit" className="career-btn">
                           SEND MESSAGE
                         </button>
                       </div>

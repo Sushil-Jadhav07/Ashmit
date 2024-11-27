@@ -33,7 +33,8 @@ export default function Footer3() {
                   <div className="content">
                     <h3>Address: </h3>
                     <p>
-                    Office no 40, 1st floor, Asiatic Arcade, <br/> Vartak Nagar, Thane (W) 400606
+                      Office no 40, 1st floor, Asiatic Arcade, <br /> Vartak
+                      Nagar, Thane (W) 400606
                     </p>
                   </div>
                 </div>
@@ -48,7 +49,6 @@ export default function Footer3() {
                     <p>
                       <a href="tel:9762411205">9987703715</a>
                     </p>
-                    
                   </div>
                 </div>
               </li>
@@ -72,7 +72,8 @@ export default function Footer3() {
           <div className="site-footer-three__middle justify-content-center">
             <div className="row">
               <div
-                className="col-xl-5 col-lg-5 col-md-6 wow fadeInUp" style={{textAlign:"center"}}
+                className="col-xl-5 col-lg-5 col-md-6 wow fadeInUp"
+                style={{ textAlign: "center" }}
                 data-wow-delay="100ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__about">
@@ -86,11 +87,15 @@ export default function Footer3() {
                     </a>
                   </div>
                   <p className="footer-widget-three__about-text">
-                    Lorem Ipsum is simply dummy text of
-                    <br />
-                    printing and typesetting industry.
+                    To become a globally recognized consulting and accounting
+                    firm, delivering innovative, reliable, and client-focused
+                    financial solutions that drive sustainable growth and
+                    success.
                   </p>
-                  <div className="footer-widget-three__email" style={{textAlign:"center" , justifyContent:  "center"}} >
+                  <div
+                    className="footer-widget-three__email"
+                    style={{ textAlign: "center", justifyContent: "center" }}
+                  >
                     <a href="mailto:info@ashmitassociates.com">
                       <span className="icon-gmail"></span>
                       info@ashmitassociates.com
@@ -99,7 +104,8 @@ export default function Footer3() {
                 </div>
               </div>
               <div
-                className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp " style={{textAlign:"center"}} 
+                className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp "
+                style={{ textAlign: "center" }}
                 data-wow-delay="200ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__company">
@@ -110,7 +116,7 @@ export default function Footer3() {
                     <li>
                       <a href="about">About</a>
                     </li>
-                    
+
                     <li>
                       <a href="portfolio">Services</a>
                     </li>
@@ -124,7 +130,6 @@ export default function Footer3() {
                 </div>
               </div>
 
-              
               {/* <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget-three__column footer-widget-three__post">
                                 <div className="footer-widget-three__title-box">
@@ -156,7 +161,8 @@ export default function Footer3() {
                         </div> */}
 
               <div
-                className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" style={{textAlign:"center"}}
+                className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+                style={{ textAlign: "center" }}
                 data-wow-delay="400ms"
               >
                 <div className="footer-widget-three__column footer-widget-three__subscribe">
@@ -198,7 +204,7 @@ export default function Footer3() {
           <div className="container">
             <div className="site-footer-three__bottom-inner">
               <p className="site-footer-three__bottom-text">
-                © 2023 Copyright www.ashmitassociates.com All rights reserved
+                © 2024 Copyright www.ashmitassociates.com All rights reserved
               </p>
               <div className="site-footer-three__bottom-social">
                 <a href="#">
