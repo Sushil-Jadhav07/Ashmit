@@ -3330,7 +3330,7 @@ ul {
 .main-slider-three__title {
   position: relative;
   display: block;
-  font-size: 56px;
+  font-size: 50px;
   color: var(--bixola-black);
   font-weight: 700;
   line-height: 62px;
@@ -3351,7 +3351,7 @@ ul {
 .main-slider-three__text {
   position: relative;
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--bixola-black);
   opacity: 0;
@@ -14952,6 +14952,10 @@ ul {
   border-radius: 50%;
 }
 
+.banner_break {
+  display: block;
+
+}
 .company-history__list-shape-11::before {
   content: "";
   position: absolute;
@@ -17229,6 +17233,29 @@ ul {
       line-height: 35px;
   }
 
+  .banner_break {
+    display: none;
+    
+  }
+  .industries-served__text{
+    text-align: center;
+  }
+  .about-four__text-3{
+    text-align: center;
+  }
+  .about-four__right{
+    margin-top: 10px;
+  }
+  .about-four__right .section-title-three{
+    margin-bottom: 10px;
+  }
+  .main-slider-three .item{
+    background-color: #fff;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    z-index: 10;
+  }
   .section-title__title br {
       display: none;
   }
@@ -17528,6 +17555,57 @@ ul {
   .portfolio-three__filter.style1 li+li {
       margin-left: 0;
       margin-top: 10px;
+  }
+  .page-header{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .about-two{
+    padding-top: 20px;
+  }
+  .about-two__text{
+    margin-top: 10px;
+ 
+  }
+  .section-title-three-text-left{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .testimonial-two .section__title-two{
+    margin-bottom: 20px;
+  }
+  .testimonial-two{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .site-footer-three__middle{
+    padding-top: 20px;
+    margin-top: 10px;
+  }
+  .feature-three{
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .services-four{
+    padding-bottom: 20px;
+  }
+  .services-details{
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .services-details__contact{
+    display: none;
+  }
+  .services-details__services-box{
+    margin-bottom: 20px;
+  }
+  .contact-page{
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .career-btn{
+    padding: 9px !important;
+    font-size: 12px;
   }
 
   .cta-three__left {
