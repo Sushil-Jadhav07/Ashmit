@@ -79,7 +79,7 @@ export default function Feature() {
                   2019.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="contact" className="text-primary">
+                  <Link href="services" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default function Feature() {
                   have a finance or tax background.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="contact" className="text-primary">
+                  <Link href="services" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
@@ -121,7 +121,7 @@ export default function Feature() {
                   Consultancy, customizing services based on client needs.
                 </p>
                 <div className="services-page__btn mt-3">
-                  <Link href="contact" className="text-primary">
+                  <Link href="services" className="text-primary">
                     Learn More <span className="icon-right-arrow1"></span>
                   </Link>
                 </div>
