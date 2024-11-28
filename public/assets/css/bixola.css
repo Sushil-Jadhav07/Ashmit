@@ -1216,7 +1216,7 @@ ul {
 }
 
 .main-menu .mobile-nav__toggler:hover {
-  color: #ffffff;
+  color: var(--bixola-s);
 }
 
 @media (min-width: 1200px) {
