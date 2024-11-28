@@ -70,7 +70,7 @@ export default function Banner() {
                     success.
                   </p>
                   <div className="main-slider-three__btn-box">
-                    <Link href="contact" className="thm-btn main-slider__btn-1">
+                    <Link href="about" className="thm-btn main-slider__btn-1">
                       Get Consulting
                     </Link>
                     {/* <Link href="about" className="thm-btn main-slider__btn-2">Learn More</Link> */}

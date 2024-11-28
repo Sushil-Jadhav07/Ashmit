@@ -253,6 +253,7 @@ ul {
   transition: all 0.5s linear;
   z-index: 1;
 }
+
 .service-btn {
   position: relative;
   display: inline-block;
@@ -270,7 +271,7 @@ ul {
   z-index: 1;
 }
 
-.service-btn::before {
+/* .service-btn::before {
   transition-duration: 800ms;
   position: absolute;
   width: 200%;
@@ -283,12 +284,12 @@ ul {
   transform: translateX(-50%);
   border-radius: 50%;
   z-index: -1;
-}
+} */
 .service-btn:hover:before {
   top: -40%;
 }
 .service-btn:hover{
-  color: var(--bixola-black);
+  color: var(--bixola-white);
 }
 
 /* .thm-btn::before {
