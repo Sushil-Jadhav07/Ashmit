@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="Income Tax">
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="Income Tax">
         <section className="services-details">
           <div className="container">
             <div className="row">
@@ -103,7 +103,7 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                  <div className="services-details__contact">
+                  {/* <div className="services-details__contact">
                     <h3 className="services-details__contact-title">
                       Contact us
                     </h3>
@@ -145,7 +145,7 @@ export default function Home() {
                         </p>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8">

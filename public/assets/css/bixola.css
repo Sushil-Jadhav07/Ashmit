@@ -1209,7 +1209,7 @@ ul {
 
 .main-menu .mobile-nav__toggler {
   font-size: 20px;
-  color: var(--bixola-white);
+  color: var(--bixola-black);
   cursor: pointer;
   -webkit-transition: 500ms;
   transition: 500ms;

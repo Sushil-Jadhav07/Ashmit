@@ -23,7 +23,7 @@ export default function Home() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <Layout headerStyle={4} footerStyle={4} breadcrumbTitle="CFO Services">
+      <Layout headerStyle={4} footerStyle={3} breadcrumbTitle="CFO Services">
         {/*Services Details Start*/}
         <section className="services-details">
           <div className="container">
@@ -103,7 +103,7 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                  <div className="services-details__contact">
+                  {/* <div className="services-details__contact">
                     <h3 className="services-details__contact-title">
                       Contact us
                     </h3>
@@ -145,7 +145,7 @@ export default function Home() {
                         </p>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8">

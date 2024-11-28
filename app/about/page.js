@@ -86,7 +86,7 @@ export default function Home() {
                       />
                     </div>
                     <img
-                      src="assets/images/resources/aboutpg-img1.png"
+                      src="assets/images/resources/ashmit_about.png"
                       alt=""
                     />
                   </div>
