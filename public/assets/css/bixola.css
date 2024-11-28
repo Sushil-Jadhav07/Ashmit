@@ -929,7 +929,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--bixola-white);
+  color: var(--bixola-black);
   position: relative;
   font-weight: 500;
   -webkit-transition: all 500ms ease;
@@ -2323,7 +2323,7 @@ ul {
 # Navigations Four
 --------------------------------------------------------------*/
 .main-header-four {
-  background: #1c4e66;
+  background: #fff;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -2483,7 +2483,7 @@ ul {
   bottom: 0;
   right: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(33, 32, 41, 0.50);
+  background:  #fff;
   backdrop-filter: blur(5px);
   z-index: -1;
 }
