@@ -60,7 +60,7 @@ export default function Footer3() {
                   <div className="content">
                     <h3>Working Time</h3>
                     <p>
-                      Mon - Sat: 9:00 AM - 5:00 PM
+                      Mon - Sat: 10:30 AM - 7:00 PM
                       <br /> Sunday Close
                     </p>
                   </div>
@@ -86,7 +86,7 @@ export default function Footer3() {
                       />
                     </a>
                   </div>
-                  <p className="footer-widget-three__about-text">
+                  <p className="footer-widget-three__about-text ">
                     To become a globally recognized consulting and accounting
                     firm, delivering innovative, reliable, and client-focused
                     financial solutions that drive sustainable growth and
@@ -171,7 +171,7 @@ export default function Footer3() {
                       Subscribe Now
                     </h3>
                   </div>
-                  <p className="footer-widget-three__subscribe-text">
+                  <p className="footer-widget-three__subscribe-text text-justify">
                     Get the latest news, tips and latest messages, including
                     special offers
                   </p>

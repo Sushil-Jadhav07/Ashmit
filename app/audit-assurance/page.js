@@ -171,7 +171,7 @@ export default function Home() {
                     following services:
                   </p>
 
-                  <h3 className="services-details__text-1 pt-5">
+                  <h3 className="services-details__text-1 pt-3">
                     Broadly, Audit involves the following :
                   </h3>
                   <ul className="services-details__points list-unstyled pt-3">
@@ -214,11 +214,11 @@ export default function Home() {
                   </h3>
                   <ul className="services-details__points list-unstyled pt-3">
                     <li>
-                      <p>1. Statutory Audit of Companies.</p>
+                      <p>1. Statutory Audit under Companies Act 2013.</p>
                     </li>
                     <li>
                       <p>
-                        2. Tax Audit under Section 44AB of the Income Tax Act, 1961.
+                      2. Tax Audit under Income Tax Act, 1961.
                       </p>
                     </li>
                     <li>

@@ -3352,6 +3352,7 @@ ul {
 .main-slider-three__text {
   position: relative;
   display: block;
+  text-align: justify;
   font-size: 18px;
   font-weight: 500;
   color: var(--bixola-black);
@@ -3806,6 +3807,8 @@ ul {
 /*--------------------------------------------------------------
 # Feature One
 --------------------------------------------------------------*/
+
+
 .feature-one {
   position: relative;
   display: block;
@@ -6450,10 +6453,14 @@ ul {
 }
 
 .about-two__text {
+  text-align: justify;
   margin-top: 28px;
   margin-bottom: 24px;
 }
 
+.about-two__text-2{
+  text-align:justify;
+}
 .about-two__points {
   position: relative;
   display: flex;
@@ -6756,6 +6763,7 @@ ul {
 }
 
 .services-two__text {
+  text-align: justify;
   font-size: 16px;
   line-height: 28px;
   margin-top: 13px;
@@ -6874,6 +6882,10 @@ ul {
 /*--------------------------------------------------------------
 # Portfolio Two
 --------------------------------------------------------------*/
+.industries-served__text{
+  text-align: justify;
+}
+
 .portfolio-two {
   position: relative;
   display: block;
@@ -7685,8 +7697,8 @@ ul {
 
 .testimonial-two__text {
   color: var(--bixola-black);
+  text-align: justify;
   font-size: 16px;
-  font-style: italic;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.32px;
@@ -10613,6 +10625,7 @@ ul {
 }
 
 .footer-widget-three__about-text {
+  text-align: justify;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -10775,6 +10788,7 @@ ul {
 }
 
 .footer-widget-three__subscribe-text {
+  text-align: justify;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 24px;
@@ -11380,6 +11394,7 @@ ul {
 }
 
 .services-page__text {
+  text-align: justify;
   font-size: 16px;
   line-height: 28px;
 }
@@ -13795,6 +13810,7 @@ ul {
 }
 
 .contact-page__sub-title {
+  text-align: justify !important;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -13983,6 +13999,10 @@ ul {
   width: 100%;
   border-top-right-radius: var(--bixola-bdr-radius);
   border-bottom-right-radius: var(--bixola-bdr-radius);
+}
+
+.services-details__text-1{
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -14379,6 +14399,9 @@ ul {
   top: -11px;
 }
 
+.about-four__text-3{
+  text-align: justify;
+}
 .about-four__experience-text {
   color: var(--bixola-white);
   font-family: var(--bixola-font-two);
@@ -17239,10 +17262,11 @@ ul {
     
   }
   .industries-served__text{
-    text-align: center;
+    text-align: justify;
   }
+  
   .about-four__text-3{
-    text-align: center;
+    text-align:justify !important;
   }
   .about-four__right{
     margin-top: 10px;

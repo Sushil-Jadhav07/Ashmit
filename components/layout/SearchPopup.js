@@ -4,7 +4,7 @@ export default function SearchPopup({ isPopup, handlePopup }) {
     return (
         <>
             
-            <div className={`search-popup ${isPopup ? "active" : ""}`}>
+            {/* <div className={`search-popup ${isPopup ? "active" : ""}`}>
                 <div className="search-popup__overlay search-toggler" onClick={handlePopup}></div>
                 <div className="search-popup__content">
                     <form action="#">
@@ -15,7 +15,7 @@ export default function SearchPopup({ isPopup, handlePopup }) {
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> */}
 
         </>
     )

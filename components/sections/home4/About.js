@@ -41,7 +41,7 @@ export default function About() {
                                 <div className="section-title-three__tagline-box">
                                     {/* <p className="section-title-three__tagline ">ABOUT US</p> */}
                                 </div>
-                                <h2 className="section-title-three__title text-lg-start text-center">Ashmit Jhunjhunwala</h2>
+                                <h2 className="section-title-three__title text-lg-start ">Ashmit Jhunjhunwala</h2>
                             </div>
                             {/* <p className="about-four__text-1">With Solid Team</p> */}
                             {/* <p className="about-four__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

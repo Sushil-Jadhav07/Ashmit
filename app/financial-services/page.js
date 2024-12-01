@@ -186,9 +186,7 @@ export default function Home() {
                     <li>
                       <p>5. Unsecured Loans.</p>
                     </li>
-                    <li>
-                      <p>6. Offer Expertise</p>
-                    </li>
+                    
                   </ul>
                   {/* <div className="services-details__img-and-feature">
                     <div className="services-details__feature-img">
