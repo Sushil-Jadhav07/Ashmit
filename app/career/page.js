@@ -97,9 +97,9 @@ export default function Home() {
                 </p>
 
                 <div class="row career-header border rounded text-center flex justify-center">
-                  <div class="col-4 flex justify-center">Position</div>
-                  <div class="col-3 flex justify-center">Experience</div>
-                  <div class="col-5 flex justify-center">Apply Now</div>
+                  <div class="col-4 flex justify-center p-1">Position</div>
+                  <div class="col-3 flex justify-center p-1">Experience</div>
+                  <div class="col-5 flex justify-center p-1">Apply Now</div>
                 </div>
 
                 {careerEntries?.map((item, index) => (
