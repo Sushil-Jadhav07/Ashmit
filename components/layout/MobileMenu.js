@@ -178,7 +178,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <li>
               <i className="fa fa-envelope"></i>
               <Link href="mailto:needhelp@elitecons.com">
-                ashmitandassociates@gmail.com
+              info@ashmitassociates.com
               </Link>
             </li>
             <li>
