@@ -3353,7 +3353,7 @@ ul {
   position: relative;
   display: block;
   text-align: justify;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--bixola-black);
   opacity: 0;
@@ -10626,7 +10626,7 @@ ul {
 
 .footer-widget-three__about-text {
   text-align: justify;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 26px;
   margin-top: 25px;
