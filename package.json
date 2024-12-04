@@ -10,8 +10,10 @@
     "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@sanity/client": "^6.22.2",
     "@sanity/image-url": "^1.0.2",
+    "dotenv": "^16.4.7",
     "isotope-layout": "^3.0.6",
     "next": "13.4.19",
     "react": "18.2.0",

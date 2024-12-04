@@ -6,6 +6,7 @@ import { client } from "../client";
 import Link from "next/link";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 // import e from "@/documentation/assets/bundles/lightgallery.bundle";
 export default function Home() {
@@ -18,26 +19,52 @@ export default function Home() {
 
   const sendMessage = async () => {
     console.log("Hii")
-    const doc = {
-      _type: "contact",
-      name: name,
-      email: email,
-      number: phone,
-      city: city,
-      message: message,
+    // const doc = {
+    //   _type: "contact",
+    //   name: name,
+    //   email: email,
+    //   number: phone,
+    //   city: city,
+    //   message: message,
 
-    };
+    // };
 
-    client.create(doc)
-    .then((res) => {
-      toast.success("Message Sent");
-      window.location.reload(), 5000;
-    })
-    .catch((error) => {
-      toast.error("Failed to send message");
-      console.error(error);
-    });
+    // client.create(doc)
+    // .then((res) => {
+    //   toast.success("Message Sent");
+    //   window.location.reload(), 5000;
+    // })
+    // .catch((error) => {
+    //   toast.error("Failed to send message");
+    //   console.error(error);
+    // });
+    const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID2;
+    const userID = process.env.NEXT_PUBLIC_USER_ID;
+     
+     
+    try {
+      const emailParams = {
+        from_name: name,
+        email: email,
+        message: message,
+        phone:phone,
+        city:city,
+      };
 
+      const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+
+      if (res.status === 200) {
+      alert("Message sent successfully!");
+        setUserInput({
+          name: "",
+          email: "",
+          message: ""
+        });
+      }
+    } catch (error) {
+        alert("Failed to send message. Please try again later.");
+    }
     setName("")
     setEmail("");
     setPhone("");
@@ -116,8 +143,8 @@ export default function Home() {
                   <p className="contact-page__sub-title mb-4">
                     LEAVE US A MESSAGE
                   </p>
-                  <form
-                    action="assets/inc/sendemail.php"
+                  <div
+                   
                     className="contact-page__form contact-form-validated"
                   >
                     <div className="row">
@@ -198,12 +225,12 @@ export default function Home() {
 
                       {/* Submit Button */}
                       <div className="col-12 mt-5 text-center">
-                        <button onClick={sendMessage} type="submit" className="career-btn">
+                        <button onClick={sendMessage} className="career-btn">
                           SEND MESSAGE
                         </button>
                       </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">

@@ -4,6 +4,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import { client } from "../client";
 import { toast, ToastContainer } from "react-toastify";
+import emailjs from '@emailjs/browser';
+
 export default function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,7 +13,6 @@ export default function Home() {
   const [qualifications, setQualifications] = useState("");
   const [resume, setResume] = useState("");
   const [message, setMessage] = useState("");
-
   const [careerEntries, setCareerEntries] = useState([]);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Home() {
       .catch(console.error);
   }, []);
 
-  console.log(careerEntries);
+  // console.log(careerEntries);
 
   const sendMessage = async () => {
     console.log(resume);
@@ -40,18 +41,57 @@ export default function Home() {
       },
       message: message,
     };
+    const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const userID = process.env.NEXT_PUBLIC_USER_ID;
 
     client
       .create(doc)
-      .then((res) => {
-        toast.success("Message Sent");
-        setTimeout(() => window.location.reload(), 5000);
+      .then((result) => {
+        try {
+          const emailParams = {
+            from_name: name,
+            email: email,
+            qualifications: qualifications,
+            phone:phone,
+            resume:resume?.name || "No resume uploaded",
+          };
+    
+          const res =  emailjs.send(serviceID, templateID, emailParams, userID);
+    
+          if (res.status === 200) {
+          alert("Message sent successfully!");
+            setUserInput({
+              name: "",
+              email: "",
+              qualifications: "",
+              phone:"",
+              resume:"",
+            });
+          }
+        } catch (error) {
+            alert("Failed to send message. Please try again later.");
+        }
+        setName("")
+        setEmail("");
+        setPhone("");
+        setQualifications("");
+        setResume("");
+        
+    
+        
       })
       .catch((error) => {
         toast.error("Failed to send message");
         console.error(error);
       });
+
+      
+      
+    
     // router.push('/')
+
+
   };
   const handleupload = (e) => {
     const { type, name } = e.target.files[0];
@@ -64,7 +104,7 @@ export default function Home() {
         setResume(document);
       })
       .catch((error) => {
-        console.log("Image upload error", error);
+        // console.log("Image upload error", error);
       });
   };
   return (
@@ -124,8 +164,7 @@ export default function Home() {
                     Get in Touch
                   </h3>
 
-                  <form
-                    action="assets/inc/sendemail.php"
+                  <div
                     className="contact-page__form contact-form-validated"
                   >
                     <div className="row">
@@ -219,14 +258,14 @@ export default function Home() {
                       <div className="col-12 mt-5 text-center">
                         <button
                           onClick={sendMessage}
-                          type="submit"
+                         
                           className="career-btn"
                         >
                           SEND MESSAGE
                         </button>
                       </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
