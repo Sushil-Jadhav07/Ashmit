@@ -1,5 +1,4 @@
 "use client";
-
 import Layout from "@/components/layout/Layout";
 import { useState } from "react";
 import { client } from "../client";
@@ -18,7 +17,6 @@ export default function Home() {
   const [message,setMessage] = useState("");
 
   const sendMessage = async () => {
-    console.log("Hii")
     // const doc = {
     //   _type: "contact",
     //   name: name,
@@ -42,8 +40,7 @@ export default function Home() {
     const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID2;
     const userID = process.env.NEXT_PUBLIC_USER_ID;
      
-     
-    try {
+
       const emailParams = {
         from_name: name,
         email: email,
@@ -51,25 +48,21 @@ export default function Home() {
         phone:phone,
         city:city,
       };
+       emailjs.send(serviceID, templateID, emailParams, userID)
+      .then((res) => {
+        alert("Message Sent successfully");
+        setName("")
+        setEmail("");
+        setPhone("");
+        setCity("");
+        setMessage("");
+      }).catch((error) => {
+        alert("Failed to send message");
+        console.error(error);
+      });
 
-      const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+    
 
-      if (res.status === 200) {
-      alert("Message sent successfully!");
-        setUserInput({
-          name: "",
-          email: "",
-          message: ""
-        });
-      }
-    } catch (error) {
-        alert("Failed to send message. Please try again later.");
-    }
-    setName("")
-    setEmail("");
-    setPhone("");
-    setCity("");
-    setMessage("");
     
     // router.push('/')
 

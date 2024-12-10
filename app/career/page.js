@@ -48,7 +48,7 @@ export default function Home() {
     client
       .create(doc)
       .then((result) => {
-        try {
+       
           const emailParams = {
             from_name: name,
             email: email,
@@ -57,26 +57,21 @@ export default function Home() {
             resume:resume?.name || "No resume uploaded",
           };
     
-          const res =  emailjs.send(serviceID, templateID, emailParams, userID);
-    
-          if (res.status === 200) {
-          alert("Message sent successfully!");
-            setUserInput({
-              name: "",
-              email: "",
-              qualifications: "",
-              phone:"",
-              resume:"",
-            });
-          }
-        } catch (error) {
-            alert("Failed to send message. Please try again later.");
-        }
-        setName("")
+          const res =  emailjs.send(serviceID, templateID, emailParams, userID).then((res) => {
+            alert("Message Sent successfully");
+            setName("")
         setEmail("");
         setPhone("");
         setQualifications("");
         setResume("");
+        setMessage("");
+          }).catch((error) => {
+            alert("Failed to send message");
+            console.error(error);
+          });
+    
+      
+       
         
     
         
